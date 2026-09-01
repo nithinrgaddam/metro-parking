@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metro Parking - Guest parking in seconds</title>
+<meta name="description" content="Metro Parking registers guest parking at your community in seconds. Save your plates once, see every active permit, and get reminded before time runs out.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Metro Parking - Guest parking in seconds">
+<meta property="og:description" content="Register guest parking at your community in seconds, see every active permit, and never let a guest overstay.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --blue-dark:#0069DA;
+    --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF;
+    --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.55;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px}
+  .nav-links a{color:var(--muted)}
+  .hero{padding:72px 0 8px;text-align:center}
+  .hero h1{font-size:clamp(34px,6vw,56px);line-height:1.08;letter-spacing:-.03em;margin:0 0 16px;font-weight:700}
+  .hero p{font-size:clamp(17px,2.2vw,21px);color:var(--muted);max-width:600px;margin:0 auto 28px}
+  .badge{display:inline-block;font-size:13px;font-weight:600;color:var(--blue);
+         background:color-mix(in srgb,var(--blue) 12%,transparent);padding:6px 13px;border-radius:999px;margin-bottom:20px}
+  .cta{display:inline-flex;align-items:center;gap:9px;background:var(--blue);color:#fff;font-weight:600;
+       font-size:16px;padding:14px 28px;border-radius:999px}
+  .cta:hover{background:var(--blue-dark);text-decoration:none}
+  .cta-note{display:block;margin-top:14px;font-size:14px;color:var(--muted)}
+  .shots{display:flex;gap:22px;overflow-x:auto;padding:44px 20px 8px;scroll-snap-type:x mandatory;
+         justify-content:flex-start}
+  .shots img{width:246px;flex:none;border-radius:24px;border:1px solid var(--line);scroll-snap-align:center;
+             background:var(--bg-soft)}
+  @media (min-width:1120px){ .shots{justify-content:center;overflow-x:visible} }
+  section{padding:60px 0}
+  .soft{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  h2{font-size:clamp(25px,3.4vw,34px);letter-spacing:-.02em;margin:0 0 10px;font-weight:700;text-align:center}
+  .sub{text-align:center;color:var(--muted);max-width:560px;margin:0 auto 40px}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(248px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .card h3{margin:14px 0 7px;font-size:17px;font-weight:600}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .ico{width:38px;height:38px;border-radius:11px;background:color-mix(in srgb,var(--blue) 13%,transparent);
+       display:grid;place-items:center}
+  .ico svg{width:20px;height:20px;stroke:var(--blue);fill:none;stroke-width:1.9;
+           stroke-linecap:round;stroke-linejoin:round}
+  .steps{max-width:620px;margin:0 auto;display:grid;gap:14px}
+  .step{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);
+        border-radius:var(--radius);padding:20px}
+  .num{width:28px;height:28px;border-radius:999px;background:var(--blue);color:#fff;font-size:14px;
+       font-weight:600;display:grid;place-items:center;flex:none}
+  .step h3{margin:2px 0 4px;font-size:16px;font-weight:600}
+  .step p{margin:0;color:var(--muted);font-size:15px}
+  .price{max-width:440px;margin:0 auto;text-align:center;background:var(--card);border:1px solid var(--line);
+         border-radius:var(--radius);padding:32px}
+  .price .big{font-size:20px;font-weight:600;margin:0 0 6px}
+  .price p{color:var(--muted);margin:0 0 4px;font-size:15px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/metro-parking/">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <span class="badge">iPhone</span>
+    <h1>Guest parking, registered in seconds</h1>
+    <p>Save your plates once, then register guest parking at your community with one tap. See every active permit, and never let a guest overstay.</p>
+    <a class="cta" href="support.html">Get in touch</a>
+    <span class="cta-note">Coming to the App Store</span>
+  </div>
+
+  <div class="shots">
+    <img src="screenshots/01-register.png" alt="The Register tab, with saved license plates and a one-tap registration form." loading="lazy" width="246">
+    <img src="screenshots/02-usage.png" alt="The Usage tab listing active, upcoming and expired parking permits." loading="lazy" width="246">
+    <img src="screenshots/03-settings.png" alt="Settings, showing reminders and calendar alarm options." loading="lazy" width="246">
+    <img src="screenshots/04-register-dark.png" alt="The Register tab in dark mode." loading="lazy" width="246">
+  </div>
+
+  <section class="soft">
+    <div class="wrap">
+      <h2>What it does</h2>
+      <p class="sub">Everything you need to run guest parking at your address, and nothing you don't.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></div>
+          <h3>Register in seconds</h3>
+          <p>Save your license plates once, then pick a start time, duration and location. Your email and phone fill in automatically.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></div>
+          <h3>See every active permit</h3>
+          <p>The Usage tab shows all parking at your address with live status badges: active, upcoming or expired. Cancel a permit right from the list.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 1 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div>
+          <h3>Never overstay</h3>
+          <p>Get notified before a permit expires. Prefer alarms? Metro Parking can drop a calendar alarm at the exact expiration time.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></div>
+          <h3>Track your hours</h3>
+          <p>See month-to-date parking hours for each vehicle, so you always know where you stand against your community's limit.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V6l8-3Z"/></svg></div>
+          <h3>Private by design</h3>
+          <p>Sign in with Apple, no passwords. Passcodes live in the iOS Keychain. No ad SDKs, no analytics SDKs, no tracking across apps.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 13h14"/><path d="M6.5 13l1.2-4.2A2 2 0 0 1 9.6 7.3h4.8a2 2 0 0 1 1.9 1.5L17.5 13"/><path d="M5 13v4h14v-4"/><path d="M7.5 17v2M16.5 17v2"/></svg></div>
+          <h3>Multiple vehicles</h3>
+          <p>Keep every plate you use on file with an optional nickname, and pick the right one at registration time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="sub">Three steps, once. After that it is one tap.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <div><h3>Sign in with Apple</h3><p>No password to create, no email to verify.</p></div>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <div><h3>Add your unit and passcode</h3><p>Your parking passcode comes from your property management or leasing office. Metro Parking does not issue passcodes.</p></div>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <div><h3>Save a plate, then register</h3><p>Choose a vehicle and a duration, and the permit is filed with your property's guest parking system.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <h2>Pricing</h2>
+      <p class="sub">Try it before you pay for it.</p>
+      <div class="price">
+        <p class="big">First 3 registrations free</p>
+        <p>Metro Parking Pro removes the limit: unlimited registrations, reminders and calendar alarms.</p>
+        <p>Available monthly or yearly. Cancel anytime in your App Store settings.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
