@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>Where Do I Find My Guest Parking Passcode? - Metro Parking</title>
+<meta name="description" content="Your guest parking passcode comes from your property management or leasing office. Here is what to ask them for before you set up guest registration.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="Where Do I Find My Guest Parking Passcode? - Metro Parking">
+<meta property="og:description" content="Your guest parking passcode comes from your property management or leasing office. Here is what to ask them for before you set up guest registration.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/#article",
+   "headline": "Where do I find my guest parking passcode?",
+   "description": "Your guest parking passcode comes from your property management or leasing office. Here is what to ask them for before you set up guest registration.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/",
+   "datePublished": "2026-10-29",
+   "dateModified": "2026-10-29",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can Metro Parking give me a guest parking passcode?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Metro Parking does not issue, generate or provide passcodes. You need to get one from your property management or leasing office, then enter it in the app's Settings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the guest parking passcode the same as my door code or Wi-Fi password?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually not. It is typically a separate code for the guest parking system, so ask the leasing office for it by name: the guest parking passcode."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I enter the passcode every time I register a guest?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You add your unit and passcode once in Settings during setup. After that, you choose a vehicle and a duration and tap Register."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is my passcode stored safely in the app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Passcodes are stored in the iOS Keychain. Delete Account in Settings erases your saved passcode from your device. You can read more on the privacy page."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I download the app today?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not yet. The site says it is coming to the App Store, and it is for iPhone only. Get your passcode from the leasing office now so you can set up as soon as it is listed."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "One-Tap Guest Registration",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Where do I find my guest parking passcode?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/one-tap-guest-registration/">One-Tap Guest Registration</a></p>
+<h1>Where do I find my guest parking passcode?</h1>
+<p class="seo-meta">Updated 2026-10-29</p>
+<p class="seo-answer">Your guest parking passcode comes from whoever manages your building or community, usually the property management company or the leasing office. You cannot look it up online or generate it yourself. Call or email the office, or check your resident portal or welcome packet, and ask for the guest parking passcode for your unit. Keep it somewhere safe, because you will need it whenever you register a guest vehicle.</p>
+<h2>Why the passcode comes from your property</h2>
+<p>Guest parking at an apartment or condo community is controlled by the property. The passcode is how the guest parking system knows a registration is coming from a real resident at that address.</p>
+<p>That means the only people who can give it to you are the people who run the system: <strong>property management or the leasing office</strong>. No app, website or search result can hand you one for your building.</p>
+<p>If you have never been given a passcode, that is normal. Many residents only find out one exists when their first guest gets a warning on the windshield.</p>
+<h2>Where to look before you call</h2>
+<p>Sometimes the passcode is already in your hands and just buried. These are the places it often turns up:</p>
+<ul><li>Your welcome packet or move-in paperwork.</li><li>Your lease or a parking addendum that came with it.</li><li>Your property's resident portal or community app.</li><li>Emails from management, especially the ones sent when you moved in.</li><li>A notice in the mailroom, the garage or the leasing office.</li></ul>
+<p>Search your inbox for words like "guest parking", "visitor parking" and "passcode". If nothing comes up, move on to asking.</p>
+<h2>What to ask your leasing office for</h2>
+<p>Ask for more than just the code. A few answers now will save you a second call later.</p>
+<ul><li><strong>The guest parking passcode</strong> for your unit, asked for by that name.</li><li><strong>The unit number or address</strong> you should enter alongside it.</li><li><strong>The rules for guest permits</strong>, including how long one permit can last and any monthly limit on parking hours.</li><li><strong>Whether the passcode ever changes</strong>, and how you will be told if it does.</li><li><strong>Who to contact</strong> if the passcode stops working.</li></ul>
+<p>A short message is enough: "Hi, I live in unit ___. Could you send me the guest parking passcode and the rules for guest permits, including any time limits?" Asking by email also gives you the passcode in writing.</p>
+<h2>What happens once you have it</h2>
+<p>Metro Parking is an iPhone app for registering guest parking at your community. It does not issue passcodes. It needs the one your property gives you, which is why you ask the office first. The app is coming to the App Store and is not listed yet, so you can collect your passcode now and be ready.</p>
+<p>Setup is three steps, done once:</p>
+<ul><li>Sign in with Apple.</li><li>In Settings, choose your unit and enter your parking passcode.</li><li>Save a license plate.</li></ul>
+<p>After that, you tap Register, pick a vehicle and a duration, and the permit is filed with your property's guest parking system. Your passcode is kept in the iOS Keychain. For the full walkthrough, see <a href="/metro-parking/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/">how to register a guest vehicle with a parking passcode</a>.</p>
+<h2>If the passcode is missing or does not work</h2>
+<ul><li>Ask the office to resend it, and keep that email for next time.</li><li>Check for look-alike characters, such as the number zero and the letter O, when you type it in.</li><li>Ask whether the code was changed recently. If so, update it in Settings.</li><li>If the office says your community does not use a passcode, a passcode-based app will not apply to you.</li></ul>
+<p>Not sure whether the app fits your community? The app files permits with your property's guest parking system, so it is worth checking with the office first. For app questions, email support@vritam.com. Support is by email only, and you can find details on the <a href="/metro-parking/support.html">support page</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Can Metro Parking give me a guest parking passcode?</h3><p>No. Metro Parking does not issue, generate or provide passcodes. You need to get one from your property management or leasing office, then enter it in the app's Settings.</p>
+<h3>Is the guest parking passcode the same as my door code or Wi-Fi password?</h3><p>Usually not. It is typically a separate code for the guest parking system, so ask the leasing office for it by name: the guest parking passcode.</p>
+<h3>Do I enter the passcode every time I register a guest?</h3><p>No. You add your unit and passcode once in Settings during setup. After that, you choose a vehicle and a duration and tap Register.</p>
+<h3>Is my passcode stored safely in the app?</h3><p>Passcodes are stored in the iOS Keychain. Delete Account in Settings erases your saved passcode from your device. You can read more on the <a href="/metro-parking/privacy.html">privacy page</a>.</p>
+<h3>Can I download the app today?</h3><p>Not yet. The site says it is coming to the App Store, and it is for iPhone only. Get your passcode from the leasing office now so you can set up as soon as it is listed.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/">How do I register a guest vehicle with a parking passcode?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>

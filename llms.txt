@@ -1,0 +1,13 @@
+# Metro Parking
+
+> Guest parking registration for your community, in seconds.
+
+<!-- seo-agent:start -->
+## Guides
+
+### One-Tap Guest Registration
+
+- [Where do I find my guest parking passcode?](https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/): Your guest parking passcode comes from your property management or leasing office. Here is what to ask them for before you set up guest registration.
+- [How do I register a guest vehicle with a parking passcode?](https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/): Step-by-step: get your passcode, choose your unit, add the guest's plate and pick a duration. A first-timer's guide to registering guest parking.
+
+<!-- seo-agent:end -->
