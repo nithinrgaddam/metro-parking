@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/</loc>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/</loc>
@@ -15,5 +19,9 @@
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/</loc>
     <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/</loc>
+    <lastmod>2026-11-05</lastmod>
   </url>
 </urlset>

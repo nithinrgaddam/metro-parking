@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>Guest Parking for Family Who Visit Often - Metro Parking</title>
+<meta name="description" content="Keep a regular visitor&#x27;s plate saved with a nickname in Metro Parking, then pick it at registration so repeat visits take one tap.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="Guest Parking for Family Who Visit Often - Metro Parking">
+<meta property="og:description" content="Keep a regular visitor&#x27;s plate saved with a nickname in Metro Parking, then pick it at registration so repeat visits take one tap.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/#article",
+   "headline": "How do I handle guest parking for family who visit often?",
+   "description": "Keep a regular visitor's plate saved with a nickname in Metro Parking, then pick it at registration so repeat visits take one tap.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/",
+   "datePublished": "2026-11-05",
+   "dateModified": "2026-11-05",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can I save more than one plate for the same family member?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Each plate is saved on its own with an optional nickname, so you can add one for every car they drive and pick the right one at registration."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I have to give each plate a nickname?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, nicknames are optional. They are most useful once you have several regular visitors and want to tell the cars apart quickly."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What do I need before I can register a visitor?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You need to sign in with Apple, choose your unit in Settings and enter your parking passcode. The passcode comes from your property management or leasing office, not from Metro Parking."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I see how many hours my family has parked this month?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Metro Parking shows month-to-date parking hours for each vehicle, which helps you see where you stand against your community's limit. It does not stop a registration that goes over."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many visits can I register for free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The first 3 registrations are free. After that, Metro Parking Pro gives you unlimited registrations, reminders and calendar alarms, billed monthly or yearly through the App Store."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Multiple Vehicles",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How do I handle guest parking for family who visit often?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/multiple-vehicles/">Multiple Vehicles</a></p>
+<h1>How do I handle guest parking for family who visit often?</h1>
+<p class="seo-meta">Updated 2026-11-05</p>
+<p class="seo-answer">Keep each regular visitor's plate saved in one place with a label you will recognize, such as the person's name or their car, so you can register a visit in seconds instead of retyping a plate each time. Register before they arrive, because many communities cap how long or how often guests can park. Check that limit with your leasing office, then keep track of the hours your family has used this month.</p>
+<h2>Why repeat visitors are worth setting up once</h2>
+<p>A friend who visits once a year can be a one-off entry. A parent who comes every other weekend, or a sibling who drops by after work, is different. Typing the same plate into the same form again and again is where mistakes creep in: a swapped letter, a zero where there should be an O, a form you start on your phone while they circle the block.</p>
+<p>The fix is simple. Treat your regular visitors like contacts. Save each plate once, give it a name you will recognize, and pick it from a short list when the next visit comes up.</p>
+<p>Before you start, gather a few things:</p>
+<ul><li>The plate number for each car your family member drives.</li><li>A label for each one, like Mom's Camry or Dad's truck.</li><li>Your parking passcode from your property management or leasing office.</li><li>Your community's rule on how long or how often guests can park.</li></ul>
+<h2>How to keep a regular visitor on file in Metro Parking</h2>
+<p>Metro Parking is an iPhone app for residents who register guest parking at their community. It is coming to the App Store. You save your plates once, and after that a registration starts from a saved vehicle instead of a blank field.</p>
+<ul><li>Sign in with Apple. There is no password to create.</li><li>In Settings, choose your unit and enter your parking passcode. The passcode comes from your property management or leasing office. Metro Parking does not issue it.</li><li>Add your visitor's license plate and, if you like, a nickname.</li><li>When they are on the way, tap Register and pick their saved vehicle. Then choose a start time, a duration and a location. Your email and phone fill in automatically.</li></ul>
+<p>The permit is filed with your property's guest parking system. Setup is three steps, done once. The next visit is a pick from your list, not a retype.</p>
+<h2>Use nicknames when you have more than one regular</h2>
+<p>Every plate you use can stay on file, and each one can have an optional nickname. With one visitor you may not need it. With three or four, a nickname is what keeps you from squinting at plate numbers while someone texts that they are ten minutes away.</p>
+<ul><li>Mom's Camry</li><li>Dad's truck</li><li>Sister's SUV</li><li>Grandma's sedan</li></ul>
+<p>A few habits help:</p>
+<ul><li>Name the person and the car if one person drives more than one.</li><li>Add a new plate when a family member borrows or rents a different car.</li><li>Keep names short enough to read at a glance.</li></ul>
+<p>At registration time you pick the right vehicle from your list, so the nickname does the work of remembering for you.</p>
+<h2>Keep an eye on how often they park</h2>
+<p>Frequent visits add up, and many communities set a limit on guest parking. Metro Parking shows month-to-date parking hours for each vehicle, so you can see where you stand against your community's limit. It shows you the numbers. It does not block a registration for you, so the call stays yours.</p>
+<p>The Usage tab lists all parking at your address. Each permit has a live status badge: active, upcoming or expired. If plans change, you can cancel a permit right from the list.</p>
+<p>Metro Parking Pro adds expiration reminders, plus a calendar alarm at the exact expiration time for people who prefer alarms.</p>
+<h2>What to know before you rely on it</h2>
+<ul><li>Metro Parking is for iPhone, and it is coming to the App Store.</li><li>You need a parking passcode from your property management or leasing office.</li><li>Permits are filed with your property's guest parking system, so check that your community's setup fits. Questions can go to support@vritam.com or the <a href="/metro-parking/support.html">Support</a> page.</li><li>The first 3 registrations are free. Family who visit often will use those quickly. Pro removes the limit and is billed monthly or yearly through the App Store. You can cancel anytime in iOS Settings.</li><li>It signs in with Apple only, keeps your passcode in the iOS Keychain, and has no ad or analytics SDKs. See the <a href="/metro-parking/privacy.html">Privacy Policy</a> for details.</li></ul>
+<p>You can read the full overview on the <a href="/metro-parking/">Metro Parking home page</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Can I save more than one plate for the same family member?</h3><p>Yes. Each plate is saved on its own with an optional nickname, so you can add one for every car they drive and pick the right one at registration.</p>
+<h3>Do I have to give each plate a nickname?</h3><p>No, nicknames are optional. They are most useful once you have several regular visitors and want to tell the cars apart quickly.</p>
+<h3>What do I need before I can register a visitor?</h3><p>You need to sign in with Apple, choose your unit in Settings and enter your parking passcode. The passcode comes from your property management or leasing office, not from Metro Parking.</p>
+<h3>Can I see how many hours my family has parked this month?</h3><p>Yes. Metro Parking shows month-to-date parking hours for each vehicle, which helps you see where you stand against your community's limit. It does not stop a registration that goes over.</p>
+<h3>How many visits can I register for free?</h3><p>The first 3 registrations are free. After that, Metro Parking Pro gives you unlimited registrations, reminders and calendar alarms, billed monthly or yearly through the App Store.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/one-tap-guest-registration/find-guest-parking-passcode/">Where do I find my guest parking passcode?</a></li><li><a href="/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/">How do I register a guest vehicle with a parking passcode?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>

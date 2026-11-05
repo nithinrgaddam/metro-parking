@@ -5,6 +5,10 @@
 <!-- seo-agent:start -->
 ## Guides
 
+### Multiple Vehicles
+
+- [How do I handle guest parking for family who visit often?](https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/): Keep a regular visitor's plate saved with a nickname in Metro Parking, then pick it at registration so repeat visits take one tap.
+
 ### One-Tap Guest Registration
 
 - [Where do I find my guest parking passcode?](https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/): Your guest parking passcode comes from your property management or leasing office. Here is what to ask them for before you set up guest registration.
