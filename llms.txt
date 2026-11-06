@@ -5,6 +5,10 @@
 <!-- seo-agent:start -->
 ## Guides
 
+### Active Permits and Usage Tab
+
+- [How do I cancel a guest parking permit?](https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/): Plans changed? Cancel a guest parking permit from the Usage tab list, check its status badge, and know who to contact if something looks off.
+
 ### Multiple Vehicles
 
 - [How do I handle guest parking for family who visit often?](https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/): Keep a regular visitor's plate saved with a nickname in Metro Parking, then pick it at registration so repeat visits take one tap.

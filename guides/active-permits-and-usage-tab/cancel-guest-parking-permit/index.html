@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>How to Cancel a Guest Parking Permit - Metro Parking</title>
+<meta name="description" content="Plans changed? Cancel a guest parking permit from the Usage tab list, check its status badge, and know who to contact if something looks off.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="How to Cancel a Guest Parking Permit - Metro Parking">
+<meta property="og:description" content="Plans changed? Cancel a guest parking permit from the Usage tab list, check its status badge, and know who to contact if something looks off.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/#article",
+   "headline": "How do I cancel a guest parking permit?",
+   "description": "Plans changed? Cancel a guest parking permit from the Usage tab list, check its status badge, and know who to contact if something looks off.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/",
+   "datePublished": "2026-11-06",
+   "dateModified": "2026-11-06",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can I cancel a permit before it starts?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Upcoming permits appear in the Usage tab with an upcoming badge, and you can cancel permits right from the list. Cancelling early is the cleanest way to handle a visit that falls through."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if the permit has already expired?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An expired permit has already ended, so there is nothing to cancel. It stays in your list with an expired badge, which is handy for checking past visits."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is cancelling a permit the same as cancelling Metro Parking Pro?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A permit is cancelled from the Usage tab. Pro is an App Store subscription: in iOS Settings, tap your name, then Subscriptions, select Metro Parking, and cancel. Pro features stay until the end of the current billing period."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who do I contact if I cannot cancel a permit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For the permit itself, contact your property management or leasing office, since they run the guest parking system. For questions about the app, email support@vritam.com."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I download Metro Parking today?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not yet. Metro Parking is an iPhone app that is coming to the App Store. You can read more on the home page."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Active Permits and Usage Tab",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How do I cancel a guest parking permit?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/active-permits-and-usage-tab/">Active Permits and Usage Tab</a></p>
+<h1>How do I cancel a guest parking permit?</h1>
+<p class="seo-meta">Updated 2026-11-06</p>
+<p class="seo-answer">To cancel a guest parking permit, use the system that issued it: your property's guest parking portal or app, or the leasing office if there is no self-service option. Find the active or upcoming permit, cancel it, and check that its status changes. Cancel as early as you can, and keep any confirmation you are given.</p>
+<h2>Cancel a guest permit with the system that filed it</h2>
+<p>A guest permit lives in one place: the guest parking system your property uses. That is where a cancellation has to land, so any method you pick needs to reach it.</p>
+<p>The usual routes are:</p>
+<ul><li>The guest parking portal or app your community points residents to.</li><li>A cancel or delete option next to the permit in your account, if the system offers one.</li><li>A call or message to your property management or leasing office, if there is no self-service option.</li></ul>
+<p>Whichever route you use, cancel as soon as plans change. A permit that has not started yet is simpler to deal with than one already running. Some communities also cap guest hours each month, so a permit you no longer need is worth removing early.</p>
+<h2>Cancel from the Usage tab in Metro Parking</h2>
+<p>Metro Parking is an iPhone app for registering guest parking at your community. It is coming to the App Store. The Usage tab shows all parking at your address in one list, and you can cancel a permit right from that list.</p>
+<h3>Steps</h3>
+<ul><li>Open Metro Parking and go to the <strong>Usage</strong> tab.</li><li>Find the guest permit in the list. If you have several, check the plate and the time first.</li><li>Cancel the permit from its entry in the list.</li><li>Look at the list again to check the permit's status.</li></ul>
+<p>That is the whole job. You do not need to hunt through your property's other systems to find the permit, because it is already listed with the rest of the parking at your address.</p>
+<h2>Read the status badge before you cancel</h2>
+<p>Every permit in the Usage tab has a live status badge. It tells you whether cancelling is still the right move.</p>
+<ul><li><strong>Upcoming:</strong> the permit has not started yet. This is the best time to cancel if your guest is no longer coming.</li><li><strong>Active:</strong> the permit is running now. Cancel it if your guest has left early.</li><li><strong>Expired:</strong> the permit has already ended, so there is nothing left to cancel.</li></ul>
+<p>The badge also helps when you have back-to-back visits or more than one vehicle on file. Check the plate and the status together so you cancel the right permit and leave the others alone.</p>
+<p>After cancelling, you can look at the month-to-date parking hours for each vehicle to see where you stand against your community's limit.</p>
+<h2>When this is the right approach, and when it is not</h2>
+<p>The Usage tab is the quickest route when your guest's permit shows up in the list for your address. You get the permit, its status and the cancel option in one place.</p>
+<p>It does depend on setup. Metro Parking needs your unit and a parking passcode, and the passcode comes from your property management or leasing office. Metro Parking does not issue passcodes.</p>
+<p>If you cannot find a permit in the list, or something looks wrong after you cancel, ask your leasing office first, since they run the guest parking system. For help with the app itself, email support@vritam.com or visit the <a href="/metro-parking/support.html">support page</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Can I cancel a permit before it starts?</h3><p>Yes. Upcoming permits appear in the Usage tab with an upcoming badge, and you can cancel permits right from the list. Cancelling early is the cleanest way to handle a visit that falls through.</p>
+<h3>What if the permit has already expired?</h3><p>An expired permit has already ended, so there is nothing to cancel. It stays in your list with an expired badge, which is handy for checking past visits.</p>
+<h3>Is cancelling a permit the same as cancelling Metro Parking Pro?</h3><p>No. A permit is cancelled from the Usage tab. Pro is an App Store subscription: in iOS Settings, tap your name, then Subscriptions, select Metro Parking, and cancel. Pro features stay until the end of the current billing period.</p>
+<h3>Who do I contact if I cannot cancel a permit?</h3><p>For the permit itself, contact your property management or leasing office, since they run the guest parking system. For questions about the app, email support@vritam.com.</p>
+<h3>Can I download Metro Parking today?</h3><p>Not yet. Metro Parking is an iPhone app that is coming to the App Store. You can read more on the <a href="/metro-parking/">home page</a>.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/">How do I register a guest vehicle with a parking passcode?</a></li><li><a href="/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/">How do I handle guest parking for family who visit often?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
