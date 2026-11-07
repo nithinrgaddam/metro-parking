@@ -8,6 +8,7 @@
 ### Active Permits and Usage Tab
 
 - [How do I cancel a guest parking permit?](https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/): Plans changed? Cancel a guest parking permit from the Usage tab list, check its status badge, and know who to contact if something looks off.
+- [What do active, upcoming and expired parking permits mean?](https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/): Active means a permit is in force now, upcoming means it starts later, expired means it has ended. See how to read all guest parking at a glance.
 
 ### Multiple Vehicles
 

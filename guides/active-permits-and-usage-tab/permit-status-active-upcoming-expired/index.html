@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>What Active, Upcoming and Expired Parking Permits Mean</title>
+<meta name="description" content="Active means a permit is in force now, upcoming means it starts later, expired means it has ended. See how to read all guest parking at a glance.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="What Active, Upcoming and Expired Parking Permits Mean">
+<meta property="og:description" content="Active means a permit is in force now, upcoming means it starts later, expired means it has ended. See how to read all guest parking at a glance.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/#article",
+   "headline": "What do active, upcoming and expired parking permits mean?",
+   "description": "Active means a permit is in force now, upcoming means it starts later, expired means it has ended. See how to read all guest parking at a glance.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/",
+   "datePublished": "2026-11-07",
+   "dateModified": "2026-11-07",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "When does an upcoming permit become active?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "At its start time. The badge is live, so it changes on its own once the start time passes. You do not need to tap anything."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does an expired permit mean my guest got a violation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Expired only means the permit's time window ended. Whether a violation follows depends on whether the vehicle stayed parked past that time and on your community's rules."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I cancel a permit I no longer need?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. You can cancel a permit right from the list in the Usage tab. The steps are in the guide on cancelling a guest parking permit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Metro Parking on the App Store yet?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is listed as coming to the App Store, and it is for iPhone only. Check the home page for updates."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who do I contact if a permit looks wrong?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Email support@vritam.com. Support is by email only, and you can find details on the support page."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Active Permits and Usage Tab",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "What do active, upcoming and expired parking permits mean?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/active-permits-and-usage-tab/">Active Permits and Usage Tab</a></p>
+<h1>What do active, upcoming and expired parking permits mean?</h1>
+<p class="seo-meta">Updated 2026-11-07</p>
+<p class="seo-answer">An active parking permit is in force right now, so the vehicle can park legally. An upcoming permit has been registered but its start time has not arrived yet. An expired permit has passed its end time and no longer covers the vehicle. Only an active permit covers the car, so check the end time on anything you rely on.</p>
+<h2>What each permit status means</h2>
+<p>Guest parking permits move through three stages. Each stage answers one question: can this vehicle park here right now?</p>
+<h3>Active</h3>
+<p>An active permit is in force at this moment. Its start time has passed and its end time has not arrived. This is the only status that covers the vehicle.</p>
+<h3>Upcoming</h3>
+<p>An upcoming permit is registered but has not started. Think of a guest arriving tonight when you filed the permit this morning. Until the start time, it does not cover the vehicle.</p>
+<h3>Expired</h3>
+<p>An expired permit has passed its end time. It is a record of past parking, not current cover. If the guest is still parked, they need a new permit.</p>
+<h2>How a permit moves from upcoming to expired</h2>
+<p>Status follows the clock, not anything you tap. A permit registered for 6 pm shows as upcoming at noon, turns active at 6 pm, and turns expired when its duration runs out.</p>
+<ul><li>Upcoming becomes active when the start time arrives.</li><li>Active becomes expired when the end time arrives.</li><li>Expired is the final stage, so a guest who stays needs a new permit.</li></ul>
+<p>This is why a status is only as good as the moment you look at it. A permit that was active when your guest parked at breakfast may be expired by dinner.</p>
+<h2>How to read all parking at your address at a glance</h2>
+<p>Metro Parking is an iPhone app for registering guest parking at your community. Its Usage tab shows all parking at your address in one list, and every permit carries a live status badge: active, upcoming or expired.</p>
+<p>A quick scan takes a few seconds:</p>
+<ul><li>Look for active badges first. These are the vehicles covered right now.</li><li>Check upcoming badges next. Confirm the start time matches when your guest actually arrives.</li><li>Glance at expired badges last. They show what has already ended, which helps when a guest says they had a permit.</li></ul>
+<p>Because the list covers your whole address, you see every permit side by side instead of checking one vehicle at a time.</p>
+<h2>What to do for each status</h2>
+<ul><li><strong>Active:</strong> note the end time. If your guest is staying longer, register another permit before the first one ends. Metro Parking Pro includes expiration reminders and calendar alarms, which can warn you ahead of time.</li><li><strong>Upcoming:</strong> if plans change, cancel it right from the list. Here is <a href="/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">how to cancel a guest parking permit</a>.</li><li><strong>Expired:</strong> nothing to do. If the guest is still on site, register again. With your plates saved, that is one tap.</li></ul>
+<p>The app also shows month-to-date parking hours for each vehicle, so you can see where you stand against your community's limit while you plan the next visit.</p>
+<h2>What to know before you rely on it</h2>
+<p>Registering needs a parking passcode from your property management or leasing office. Metro Parking does not issue passcodes. Once you add your unit and passcode in Settings and save a plate, permits are filed with your property's guest parking system.</p>
+<p>Metro Parking is for iPhone and is coming to the App Store. The first 3 registrations are free, and Metro Parking Pro removes that limit. A badge tells you the state of a permit. It does not replace your community's own rules about how long guests can stay. You can read more on the <a href="/metro-parking/">home page</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>When does an upcoming permit become active?</h3><p>At its start time. The badge is live, so it changes on its own once the start time passes. You do not need to tap anything.</p>
+<h3>Does an expired permit mean my guest got a violation?</h3><p>No. Expired only means the permit's time window ended. Whether a violation follows depends on whether the vehicle stayed parked past that time and on your community's rules.</p>
+<h3>Can I cancel a permit I no longer need?</h3><p>Yes. You can cancel a permit right from the list in the Usage tab. The steps are in the guide on <a href="/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">cancelling a guest parking permit</a>.</p>
+<h3>Is Metro Parking on the App Store yet?</h3><p>It is listed as coming to the App Store, and it is for iPhone only. Check the <a href="/metro-parking/">home page</a> for updates.</p>
+<h3>Who do I contact if a permit looks wrong?</h3><p>Email support@vritam.com. Support is by email only, and you can find details on the <a href="/metro-parking/support.html">support page</a>.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">How do I cancel a guest parking permit?</a></li><li><a href="/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/">How do I register a guest vehicle with a parking passcode?</a></li><li><a href="/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/">How do I handle guest parking for family who visit often?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
