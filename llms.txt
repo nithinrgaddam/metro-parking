@@ -10,6 +10,10 @@
 - [How do I cancel a guest parking permit?](https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/): Plans changed? Cancel a guest parking permit from the Usage tab list, check its status badge, and know who to contact if something looks off.
 - [What do active, upcoming and expired parking permits mean?](https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/): Active means a permit is in force now, upcoming means it starts later, expired means it has ended. See how to read all guest parking at a glance.
 
+### Expiration Reminders and Calendar Alarms
+
+- [How do I get a reminder before guest parking expires?](https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/): Three ways to get a reminder before guest parking expires: a phone timer, a calendar alarm, or Metro Parking Pro reminders. Plus where each one falls short.
+
 ### Multiple Vehicles
 
 - [How do I handle guest parking for family who visit often?](https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/): Keep a regular visitor's plate saved with a nickname in Metro Parking, then pick it at registration so repeat visits take one tap.

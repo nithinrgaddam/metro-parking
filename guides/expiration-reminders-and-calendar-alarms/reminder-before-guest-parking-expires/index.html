@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>How to Get a Reminder Before Guest Parking Expires - Metro Parking</title>
+<meta name="description" content="Three ways to get a reminder before guest parking expires: a phone timer, a calendar alarm, or Metro Parking Pro reminders. Plus where each one falls short.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="How to Get a Reminder Before Guest Parking Expires - Metro Parking">
+<meta property="og:description" content="Three ways to get a reminder before guest parking expires: a phone timer, a calendar alarm, or Metro Parking Pro reminders. Plus where each one falls short.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/#article",
+   "headline": "How do I get a reminder before guest parking expires?",
+   "description": "Three ways to get a reminder before guest parking expires: a phone timer, a calendar alarm, or Metro Parking Pro reminders. Plus where each one falls short.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/",
+   "datePublished": "2026-11-08",
+   "dateModified": "2026-11-08",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Are expiration reminders part of Metro Parking Pro?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, reminders and calendar alarms are listed among the Pro inclusions, alongside unlimited registrations. Pro is available monthly or yearly through the App Store, and you can cancel anytime in iOS Settings. Pro features remain until the end of the current billing period."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the reminder go to my guest or to me?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It notifies you, the person who registered the permit. Pass the end time to your guest separately so they know when to move the car."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will a reminder extend the permit or stop an overstay?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The app sends reminders and alarms and shows your month-to-date hours, but it does not auto-extend permits or stop a guest from overstaying. Acting on the nudge is up to you and your guest."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if I never see the notification?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Check that notifications are allowed for the app in iOS Settings and that a Focus mode is not hiding them. A calendar alarm at the expiration time gives you a second chance. If it still does not arrive, email support@vritam.com."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I download Metro Parking today?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not yet. The app is coming to the App Store, and it is for iPhone only."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Expiration Reminders and Calendar Alarms",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How do I get a reminder before guest parking expires?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/expiration-reminders-and-calendar-alarms/">Expiration Reminders and Calendar Alarms</a></p>
+<h1>How do I get a reminder before guest parking expires?</h1>
+<p class="seo-meta">Updated 2026-11-08</p>
+<p class="seo-answer">Set the alert yourself the moment the guest permit is filed. Read the end time off the confirmation, then create a phone timer or calendar event that fires 30 to 60 minutes before it, with a second alert at the exact end time. Send your guest that end time too. A reminder only tells you; it cannot move the car, so it helps only if your guest can leave when it goes off.</p>
+<h2>Set the alert when you register the permit</h2>
+<p>A reminder is only as good as the time it points to. The moment a guest permit is filed, note the end time: the start time plus the duration you chose. Everything else hangs off that.</p>
+<p>If you set alerts by hand, do this each visit:</p>
+<ul><li>Read the end time from the permit confirmation, not from memory.</li><li>Create a phone timer or a calendar event with an alert 30 to 60 minutes before that end time.</li><li>Add a second alert at the exact end time, so a missed first nudge still gets a second chance.</li><li>Send your guest the end time too, so they are not relying on you alone.</li></ul>
+<p>This works for any permit at any community and costs nothing. The catch is that you have to remember to do it every single visit, which is exactly the kind of small task people forget.</p>
+<h2>Let the app send a before-expiry notification</h2>
+<p>Metro Parking is an iPhone app that files guest permits with your property's guest parking system, and it notifies you before a permit expires. Expiration reminders are listed as a <strong>Metro Parking Pro</strong> inclusion, along with calendar alarms and unlimited registrations. The app is coming to the App Store and is not listed there yet.</p>
+<p>Setup is done once:</p>
+<ul><li>Sign in with Apple. There is no password to create.</li><li>In Settings, add your unit and your parking passcode. The passcode comes from your property management or leasing office, since Metro Parking does not issue passcodes.</li><li>Save a license plate.</li></ul>
+<p>After that, choose a vehicle and a duration, tap Register, and the permit is filed. The notification is tied to when that permit expires, so you do not have to build a separate timer for each visit.</p>
+<p>As with any iPhone app, notifications need to be allowed in iOS Settings for them to reach you.</p>
+<h2>Add a calendar alarm at the exact expiration time</h2>
+<p>Some people swipe away banners but obey alarms. For them, Pro can also drop a calendar alarm at the exact expiration time.</p>
+<p>The two do different jobs. A before-expiry notification is a heads-up that leaves you time to act. An alarm at the expiration time tells you the permit is ending right now. Using both is a sensible setup if your guest tends to run late or your community is strict about overstays.</p>
+<h2>A nudge, not a guarantee</h2>
+<p>Be clear about what a reminder does. It tells you. It does not move the car.</p>
+<ul><li>A notification can be silenced by Focus, Do Not Disturb, or notification settings you turned off.</li><li>Your guest still has to be reachable and able to leave.</li><li>Metro Parking does not auto-extend permits, and it does not stop a guest from overstaying or block a registration that goes over your community's limit.</li></ul>
+<p>What it does give you is visibility. The Usage tab lists all parking at your address, and each permit carries a live status badge: active, upcoming or expired. You can cancel a permit right from that list.</p>
+<p>Monthly hours tracking shows month-to-date parking hours for each vehicle, so you can see where you stand against your community's limit before the next visit.</p>
+<h2>Which approach fits you</h2>
+<ul><li><strong>Phone timer or calendar event:</strong> free and works anywhere, but you set it by hand every time.</li><li><strong>Pro reminders in the app:</strong> tied to the permit itself, with nothing extra to set per visit. iPhone only.</li><li><strong>Both:</strong> keep your own alert as a backup if a missed parking notice would be costly.</li></ul>
+<p>Questions about reminders or setup can go to the <a href="/metro-parking/support.html">Support</a> page. Support is by email only. You can also read how the app works on the <a href="/metro-parking/">home page</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Are expiration reminders part of Metro Parking Pro?</h3><p>Yes, reminders and calendar alarms are listed among the Pro inclusions, alongside unlimited registrations. Pro is available monthly or yearly through the App Store, and you can cancel anytime in iOS Settings. Pro features remain until the end of the current billing period.</p>
+<h3>Does the reminder go to my guest or to me?</h3><p>It notifies you, the person who registered the permit. Pass the end time to your guest separately so they know when to move the car.</p>
+<h3>Will a reminder extend the permit or stop an overstay?</h3><p>No. The app sends reminders and alarms and shows your month-to-date hours, but it does not auto-extend permits or stop a guest from overstaying. Acting on the nudge is up to you and your guest.</p>
+<h3>What if I never see the notification?</h3><p>Check that notifications are allowed for the app in iOS Settings and that a Focus mode is not hiding them. A calendar alarm at the expiration time gives you a second chance. If it still does not arrive, email support@vritam.com.</p>
+<h3>Can I download Metro Parking today?</h3><p>Not yet. The app is coming to the App Store, and it is for iPhone only.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">How do I cancel a guest parking permit?</a></li><li><a href="/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/">What do active, upcoming and expired parking permits mean?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
