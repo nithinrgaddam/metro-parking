@@ -13,6 +13,7 @@
 ### Expiration Reminders and Calendar Alarms
 
 - [How do I get a reminder before guest parking expires?](https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/): Three ways to get a reminder before guest parking expires: a phone timer, a calendar alarm, or Metro Parking Pro reminders. Plus where each one falls short.
+- [Should I use a calendar alarm for parking expiration?](https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/calendar-alarm-for-parking-expiration/): Compare a heads-up notification with an alarm at the exact expiration time for guest parking permits, and pick the style that suits you.
 
 ### Multiple Vehicles
 

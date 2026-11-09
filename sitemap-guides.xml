@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/</loc>
@@ -43,5 +43,9 @@
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/</loc>
     <lastmod>2026-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/calendar-alarm-for-parking-expiration/</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
 </urlset>
