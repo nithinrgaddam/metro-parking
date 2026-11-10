@@ -15,6 +15,10 @@
 - [How do I get a reminder before guest parking expires?](https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/): Three ways to get a reminder before guest parking expires: a phone timer, a calendar alarm, or Metro Parking Pro reminders. Plus where each one falls short.
 - [Should I use a calendar alarm for parking expiration?](https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/calendar-alarm-for-parking-expiration/): Compare a heads-up notification with an alarm at the exact expiration time for guest parking permits, and pick the style that suits you.
 
+### Monthly Hours Tracking
+
+- [How do I track guest parking hours each month?](https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/track-guest-parking-hours-monthly/): Add up guest parking hours per vehicle each month and compare them with your community's limit. Here is a simple method and where the app helps.
+
 ### Multiple Vehicles
 
 - [How do I handle guest parking for family who visit often?](https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/): Keep a regular visitor's plate saved with a nickname in Metro Parking, then pick it at registration so repeat visits take one tap.
