@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>How to Avoid Going Over Guest Parking Hour Limit - Metro Parking</title>
+<meta name="description" content="Plan guest visits around a monthly parking hour cap by tracking hours per vehicle, and know what Metro Parking shows and what it leaves to you.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/avoid-going-over-guest-parking-hour-limit/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="How to Avoid Going Over Guest Parking Hour Limit - Metro Parking">
+<meta property="og:description" content="Plan guest visits around a monthly parking hour cap by tracking hours per vehicle, and know what Metro Parking shows and what it leaves to you.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/avoid-going-over-guest-parking-hour-limit/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/avoid-going-over-guest-parking-hour-limit/#article",
+   "headline": "How do I avoid going over my guest parking hour limit?",
+   "description": "Plan guest visits around a monthly parking hour cap by tracking hours per vehicle, and know what Metro Parking shows and what it leaves to you.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/avoid-going-over-guest-parking-hour-limit/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/avoid-going-over-guest-parking-hour-limit/",
+   "datePublished": "2026-11-11",
+   "dateModified": "2026-11-11",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Will Metro Parking stop me from registering a guest if I am over the limit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It shows month-to-date hours for each vehicle, but it does not block registrations. You look at the hours, compare them with your community's limit, and decide."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I find out my community's guest parking hour limit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ask your property management or leasing office, or check your resident guide. Ask at the same time whether the cap is per vehicle or per unit, and whether it runs on a calendar month."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if my community counts hours per unit instead of per vehicle?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Metro Parking shows hours for each vehicle, so you add up the vehicles that count toward your unit. Confirm with your leasing office exactly how they total them."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I get a reminder before a guest permit runs out?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, with Metro Parking Pro. It notifies you before a permit expires and can add a calendar alarm at the exact expiration time. These are reminders, not a guarantee that a guest will leave."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I download Metro Parking today?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not yet. It is an iPhone app that is coming to the App Store. Until then, a simple notes or spreadsheet log of dates, plates and times will do the job."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Monthly Hours Tracking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How do I avoid going over my guest parking hour limit?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/monthly-hours-tracking/">Monthly Hours Tracking</a></p>
+<h1>How do I avoid going over my guest parking hour limit?</h1>
+<p class="seo-meta">Updated 2026-11-11</p>
+<p class="seo-answer">Find out how your community counts guest hours: per vehicle, per unit or per visit, and over what period. Then keep a running total of hours used so far this month. Before you register a new visit, subtract that total from the cap and choose a duration that covers the visit with a little room to spare. Checking before you register matters more than checking after.</p>
+<h2>Find out exactly how your community counts hours</h2>
+<p>A cap on guest hours only helps you plan if you know how it is measured. Two communities can both say a set number of hours a month and mean very different things.</p>
+<p>Ask your property management or leasing office, or check your resident guide, for these details:</p>
+<ul><li><strong>The number and the period.</strong> How many hours, and whether the month is a calendar month or a rolling window.</li><li><strong>What the cap applies to.</strong> One vehicle, one unit, or every guest at the property.</li><li><strong>What counts as an hour.</strong> Whether a permit counts for its full length or only the time the car is parked, and whether overnight hours count like daytime ones.</li><li><strong>What happens at the limit.</strong> A warning, a fee, a towing risk, or a block on new permits.</li></ul>
+<p>Write the answers down somewhere you will see them. Everything else in this guide depends on them.</p>
+<h2>Plan visits against month-to-date hours</h2>
+<p>Most people go over a cap by accident, not on purpose. One long weekend stay uses far more hours than it feels like, and the month is nowhere near over.</p>
+<p>The fix is to look at your running total before you register, not after. Here is a simple way to do it:</p>
+<ul><li>Check the hours each guest vehicle has already used this month.</li><li>Subtract that from your community's limit to see what is left.</li><li>Look at the visits coming up: a friend staying overnight, a contractor all day, a relative who comes every Sunday.</li><li>Choose durations that cover the visit and no more. Booking a full day for a two-hour dinner burns hours you may want later.</li><li>Keep a buffer for surprises, such as a guest who stays longer than planned.</li></ul>
+<p>If hours get tight late in the month, think about which visits can move to next month, or whether a guest can park elsewhere for a day.</p>
+<h3>Counting by hand</h3>
+<p>A notes app or spreadsheet works. Log the date, the plate, and the start and end time each time you register, then add them up. It is reliable, but it is easy to forget an entry, and your total is only as good as your last note.</p>
+<h2>How Metro Parking helps with the tracking</h2>
+<p>Metro Parking is an iPhone app for registering guest parking at your community, and it is coming to the App Store. Its <strong>Monthly Hours Tracking</strong> shows month-to-date parking hours for each vehicle, so the running total from the steps above is already in front of you when you go to register.</p>
+<p>You save each plate once and can give it a nickname, like Mom's car or Dog sitter. You pick the right vehicle when you register, and its hours are right there to compare with your community's limit.</p>
+<p>The <strong>Usage</strong> tab lists all parking at your address, with a live status badge for each permit: active, upcoming or expired. If a guest leaves early, you can cancel the permit right from the list.</p>
+<h3>What it shows, and what it does not do</h3>
+<p>Be clear about one thing: the app shows you hours. It does not block a registration that would take you over your community's limit. You compare the number to your cap and decide.</p>
+<p>It also cannot guarantee that a guest will leave on time. Metro Parking Pro adds a reminder before a permit expires and an optional calendar alarm at the exact expiration time, which helps you nudge a guest in time. The first 3 registrations are free, and Pro removes that limit and includes the reminders and alarms.</p>
+<p>To register guests you need a parking passcode from your property management or leasing office, which you enter in Settings. For the step-by-step, read <a href="/metro-parking/guides/monthly-hours-tracking/track-guest-parking-hours-monthly/">how to track guest parking hours each month</a>, or see the <a href="/metro-parking/">home page</a> for the full picture.</p>
+<h2>A routine that keeps you under the cap</h2>
+<ul><li>At the start of the month, note your limit and any long visits you already know about.</li><li>Before each registration, check the vehicle's month-to-date hours.</li><li>Register the shortest duration that fits the visit.</li><li>If you have Pro, turn on a reminder or calendar alarm so a guest does not overstay by accident.</li><li>Around mid-month, check again and adjust your plans for the rest of it.</li></ul>
+<p>The routine takes a minute or two per visit. It is much cheaper than finding out at the end of the month that you are over.</p>
+<h2>When tracking alone is not enough</h2>
+<p>Seeing your hours cannot change how your community counts them. If the limit applies per unit and you use several plates, add the per-vehicle totals together yourself.</p>
+<p>If the numbers ever seem to disagree with what your property tells you, ask the leasing office how they count. For questions about the app itself, use the <a href="/metro-parking/support.html">support page</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Will Metro Parking stop me from registering a guest if I am over the limit?</h3><p>No. It shows month-to-date hours for each vehicle, but it does not block registrations. You look at the hours, compare them with your community's limit, and decide.</p>
+<h3>How do I find out my community&#x27;s guest parking hour limit?</h3><p>Ask your property management or leasing office, or check your resident guide. Ask at the same time whether the cap is per vehicle or per unit, and whether it runs on a calendar month.</p>
+<h3>What if my community counts hours per unit instead of per vehicle?</h3><p>Metro Parking shows hours for each vehicle, so you add up the vehicles that count toward your unit. Confirm with your leasing office exactly how they total them.</p>
+<h3>Can I get a reminder before a guest permit runs out?</h3><p>Yes, with Metro Parking Pro. It notifies you before a permit expires and can add a calendar alarm at the exact expiration time. These are reminders, not a guarantee that a guest will leave.</p>
+<h3>Can I download Metro Parking today?</h3><p>Not yet. It is an iPhone app that is coming to the App Store. Until then, a simple notes or spreadsheet log of dates, plates and times will do the job.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/monthly-hours-tracking/track-guest-parking-hours-monthly/">How do I track guest parking hours each month?</a></li><li><a href="/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/">How do I get a reminder before guest parking expires?</a></li><li><a href="/guides/expiration-reminders-and-calendar-alarms/calendar-alarm-for-parking-expiration/">Should I use a calendar alarm for parking expiration?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
