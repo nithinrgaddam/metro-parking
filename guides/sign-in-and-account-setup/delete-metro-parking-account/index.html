@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>How to delete my account in a parking app - Metro Parking</title>
+<meta name="description" content="Delete Account in Metro Parking Settings erases your vehicles, contact details, passcode and parking history from your iPhone and signs you out.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/delete-metro-parking-account/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="How to delete my account in a parking app - Metro Parking">
+<meta property="og:description" content="Delete Account in Metro Parking Settings erases your vehicles, contact details, passcode and parking history from your iPhone and signs you out.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/delete-metro-parking-account/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/delete-metro-parking-account/#article",
+   "headline": "How do I delete my account in a parking app?",
+   "description": "Delete Account in Metro Parking Settings erases your vehicles, contact details, passcode and parking history from your iPhone and signs you out.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/delete-metro-parking-account/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/delete-metro-parking-account/",
+   "datePublished": "2026-11-12",
+   "dateModified": "2026-11-12",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Do I need to cancel my subscription separately?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Metro Parking Pro is billed and managed through the App Store, so cancel it in iOS Settings: tap your name, then Subscriptions, select Metro Parking, and cancel. Pro features remain until the end of the current billing period."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a password to sign in again?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Sign in with Apple is the only sign-in method, so there is no password to create and no email to verify."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What exactly does Delete Account remove?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It erases your saved vehicles, contact details, passcode and parking history from your device, then signs you out. You will re-enter them if you set the app up again."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who do I contact if I have questions about my data?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Email support@vritam.com. Support is by email only. You can also read the Privacy Policy."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Sign In and Account Setup",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How do I delete my account in a parking app?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/sign-in-and-account-setup/">Sign In and Account Setup</a></p>
+<h1>How do I delete my account in a parking app?</h1>
+<p class="seo-meta">Updated 2026-11-12</p>
+<p class="seo-answer">Open the parking app, go to Settings or Account, and look for a Delete Account option. Confirm the prompt and the app removes your saved details and signs you out. Before you do, cancel any active permit and any subscription, because those are often handled separately. If you cannot find the option, email the app's support team and ask for deletion.</p>
+<h2>Where to find Delete Account in a parking app</h2>
+<p>Most parking apps keep account deletion in Settings, sometimes under Account, Profile or Privacy. Look for a line labeled Delete Account or Close Account, usually near the bottom of the screen.</p>
+<p>Parking apps hold more than a login. They often store your license plates, a phone number and a record of past permits. It is worth knowing what the delete button actually removes before you tap it.</p>
+<p>A few quick checks apply to any parking app:</p>
+<ul><li>Does deletion clear data only on your phone, or also on the company's side? The privacy policy usually says.</li><li>Is your subscription billed through the App Store? Deleting an account may not stop billing.</li><li>Do you have a permit or reservation that is still active?</li><li>Is there a support email for deletion requests if the option is missing?</li></ul>
+<h2>How to delete your account in Metro Parking</h2>
+<p>Metro Parking is an iPhone app for registering guest parking, and it is coming to the App Store. Delete Account lives in its Settings, the same place where you enter your unit and parking passcode.</p>
+<ul><li>Open Metro Parking and go to <strong>Settings</strong>.</li><li>Tap <strong>Delete Account</strong>.</li><li>The app erases your saved data from your device and signs you out.</li></ul>
+<p>That is all there is to it. There is no password to confirm, because Sign in with Apple is the only way into the app.</p>
+<h2>What Delete Account erases from your device</h2>
+<p>Delete Account clears four things from your iPhone, then signs you out:</p>
+<ul><li><strong>Saved vehicles</strong> - every license plate you have on file.</li><li><strong>Contact details</strong> - the email and phone number that fill in for you at registration.</li><li><strong>Passcode</strong> - the parking passcode you entered in Settings.</li><li><strong>Parking history</strong> - your record of past parking.</li></ul>
+<p>This covers what the app keeps on your device. If you have questions about anything beyond that, email support@vritam.com or read the <a href="/metro-parking/privacy.html">Privacy Policy</a>.</p>
+<h2>Before you delete: a short checklist</h2>
+<p>Once your details are gone, you start from scratch. Take a minute to tidy up first.</p>
+<ul><li><strong>Check the Usage tab.</strong> It shows all parking at your address with active, upcoming or expired badges. Cancel any permit you no longer need right from the list.</li><li><strong>Cancel Pro if you have it.</strong> Subscriptions are billed and managed through the App Store. In iOS Settings, tap your name, then Subscriptions, select Metro Parking, and cancel. Pro features stay until the end of the current billing period.</li><li><strong>Keep your passcode handy.</strong> It comes from your property management or leasing office, not from the app, so you will need it again if you return.</li></ul>
+<p>Deleting your account and cancelling a subscription are two separate steps, done in two different places.</p>
+<h2>Coming back after you delete</h2>
+<p>Nothing is locked in. Sign in with Apple again and repeat the three setup steps: sign in, add your unit and parking passcode, then save a plate.</p>
+<p>Because your vehicles and passcode were erased from the device, you will re-enter them. After that, registering a guest is one tap again. Need a hand? See the <a href="/metro-parking/support.html">Support</a> page, or head back to the <a href="/metro-parking/">home page</a> to see how guest registration works.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Do I need to cancel my subscription separately?</h3><p>Yes. Metro Parking Pro is billed and managed through the App Store, so cancel it in iOS Settings: tap your name, then Subscriptions, select Metro Parking, and cancel. Pro features remain until the end of the current billing period.</p>
+<h3>Do I need a password to sign in again?</h3><p>No. Sign in with Apple is the only sign-in method, so there is no password to create and no email to verify.</p>
+<h3>What exactly does Delete Account remove?</h3><p>It erases your saved vehicles, contact details, passcode and parking history from your device, then signs you out. You will re-enter them if you set the app up again.</p>
+<h3>Who do I contact if I have questions about my data?</h3><p>Email support@vritam.com. Support is by email only. You can also read the <a href="/metro-parking/privacy.html">Privacy Policy</a>.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/monthly-hours-tracking/track-guest-parking-hours-monthly/">How do I track guest parking hours each month?</a></li><li><a href="/guides/monthly-hours-tracking/avoid-going-over-guest-parking-hour-limit/">How do I avoid going over my guest parking hour limit?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>

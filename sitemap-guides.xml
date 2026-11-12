@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/</loc>
@@ -23,6 +23,10 @@
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/</loc>
     <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/</loc>
@@ -59,5 +63,9 @@
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/avoid-going-over-guest-parking-hour-limit/</loc>
     <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/delete-metro-parking-account/</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
 </urlset>
