@@ -32,5 +32,6 @@
 ### Sign In and Account Setup
 
 - [How do I delete my account in a parking app?](https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/delete-metro-parking-account/): Delete Account in Metro Parking Settings erases your vehicles, contact details, passcode and parking history from your iPhone and signs you out.
+- [Can I use a parking app without a password?](https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/parking-app-without-a-password/): Yes. Metro Parking uses Sign in with Apple only, so there is no password to create and no email to verify. Here is the one-time setup that follows.
 
 <!-- seo-agent:end -->
