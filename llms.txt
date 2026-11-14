@@ -29,6 +29,10 @@
 - [Where do I find my guest parking passcode?](https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/): Your guest parking passcode comes from your property management or leasing office. Here is what to ask them for before you set up guest registration.
 - [How do I register a guest vehicle with a parking passcode?](https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/): Step-by-step: get your passcode, choose your unit, add the guest's plate and pick a duration. A first-timer's guide to registering guest parking.
 
+### Private by Design
+
+- [Where does a parking app keep my passcode?](https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/): Your parking passcode should live in the iOS Keychain, not in plain app storage. See how Metro Parking keeps it, with no ad or analytics SDKs.
+
 ### Sign In and Account Setup
 
 - [How do I delete my account in a parking app?](https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/delete-metro-parking-account/): Delete Account in Metro Parking Settings erases your vehicles, contact details, passcode and parking history from your iPhone and signs you out.

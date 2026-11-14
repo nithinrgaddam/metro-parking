@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>Where does a parking app keep my passcode - Metro Parking</title>
+<meta name="description" content="Your parking passcode should live in the iOS Keychain, not in plain app storage. See how Metro Parking keeps it, with no ad or analytics SDKs.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="Where does a parking app keep my passcode - Metro Parking">
+<meta property="og:description" content="Your parking passcode should live in the iOS Keychain, not in plain app storage. See how Metro Parking keeps it, with no ad or analytics SDKs.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/#article",
+   "headline": "Where does a parking app keep my passcode?",
+   "description": "Your parking passcode should live in the iOS Keychain, not in plain app storage. See how Metro Parking keeps it, with no ad or analytics SDKs.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/",
+   "datePublished": "2026-11-14",
+   "dateModified": "2026-11-14",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does Metro Parking give me a parking passcode?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Your passcode comes from your property management or leasing office. Metro Parking only stores it, in the iOS Keychain, after you enter it in Settings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Metro Parking track me across other apps?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It has no ad SDKs, no analytics SDKs and no tracking across apps."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I remove my passcode from the app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Open Settings in the app and choose Delete Account. That erases your saved vehicles, contact details, passcode and parking history from your device and signs you out."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need to create a password for Metro Parking?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You sign in with Apple only, so there is no password to create and no email to verify."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who do I ask if I have a privacy question?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Read the Privacy Policy first. You can also email support@vritam.com, since support is by email."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Private by Design",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Where does a parking app keep my passcode?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/private-by-design/">Private by Design</a></p>
+<h1>Where does a parking app keep my passcode?</h1>
+<p class="seo-meta">Updated 2026-11-14</p>
+<p class="seo-answer">On an iPhone, a well-built app keeps a parking passcode in the iOS Keychain, Apple's encrypted storage for small secrets such as passwords and codes. It should not sit in plain text in app settings, a note or a screenshot. Also check that the app carries no ad or analytics code and does not track you across other apps.</p>
+<h2>What the iOS Keychain does for a passcode</h2>
+<p>The Keychain is a protected store built into iOS. An app hands it a small secret, such as a password or a passcode, and iOS keeps it encrypted and separate from the app's ordinary files.</p>
+<p>That matters because ordinary app storage is built for things like preferences and cached data. It is not meant for secrets. A passcode saved there in plain text is easier to expose than one the system guards for you.</p>
+<p>A parking passcode deserves that care. It is the code your property gives you to register guest parking at your address, so treat it like a password.</p>
+<h2>Where Metro Parking keeps your passcode</h2>
+<p>Metro Parking stores your parking passcode in the iOS Keychain. You enter it once, in Settings, next to your unit. After that, registering a guest is one tap.</p>
+<ul><li><strong>Sign in with Apple only.</strong> There is no password to create and no email to verify.</li><li><strong>Passcode in the Keychain.</strong> The code your property gave you is kept in iOS's protected store.</li><li><strong>Delete Account in Settings.</strong> It erases your saved vehicles, contact details, passcode and parking history from your device and signs you out.</li></ul>
+<p>Metro Parking does not issue passcodes. You get yours from your property management or leasing office, and the app holds it for you once you enter it. The app is coming to the App Store, and Metro Parking is not affiliated with Apple Inc.</p>
+<h2>No ad SDKs, no analytics SDKs, no cross-app tracking</h2>
+<p>An SDK is a bundle of third-party code that an app builds in. Ad and analytics SDKs exist to show ads or measure what people do, and each one adds another party to the picture.</p>
+<p>Metro Parking carries no ad SDKs and no analytics SDKs, and it does not track you across other apps. You get the tools for registering guest parking and nothing you don't need.</p>
+<p>Put together, the promise is short: Sign in with Apple, your passcode in the Keychain, and no ad or analytics code watching in the background.</p>
+<h2>How to check any parking app before you trust it</h2>
+<p>You do not need to read code to ask good questions. Try these:</p>
+<ul><li><strong>Look at how you sign in.</strong> Sign in with Apple means no new password for you to reuse or forget.</li><li><strong>Ask where the passcode is stored.</strong> Plain-text settings or a notes field is a poor answer. The Keychain is the right one.</li><li><strong>Read the privacy details.</strong> Check the app's page and its privacy policy for ad tools, analytics tools and tracking across apps.</li><li><strong>Find the delete option.</strong> You should be able to remove your passcode and history from inside the app.</li><li><strong>Look for a way to reach the developer.</strong> A support address means you can ask before you enter anything.</li></ul>
+<p>You can read how Metro Parking handles this on the <a href="/metro-parking/privacy.html">Privacy Policy</a> page, or ask a question through <a href="/metro-parking/support.html">Support</a>.</p>
+<h2>What the Keychain does not cover</h2>
+<p>Storing a passcode well is one layer, not the whole story. A few limits are worth knowing:</p>
+<ul><li>The Keychain leans on your iPhone's own lock. Use a device passcode or Face ID, and do not hand your unlocked phone around.</li><li>It cannot protect a passcode you share. If you text the code to a friend, it also lives in that thread.</li><li>Your property controls the passcode. If management changes it, enter the new one in Settings.</li><li>Delete Account clears your data from your device. For anything beyond that, read the privacy policy or email support.</li></ul>
+<p>If you want the full picture of what the app does with your setup, the <a href="/metro-parking/">home page</a> walks through the three setup steps.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Does Metro Parking give me a parking passcode?</h3><p>No. Your passcode comes from your property management or leasing office. Metro Parking only stores it, in the iOS Keychain, after you enter it in Settings.</p>
+<h3>Does Metro Parking track me across other apps?</h3><p>No. It has no ad SDKs, no analytics SDKs and no tracking across apps.</p>
+<h3>How do I remove my passcode from the app?</h3><p>Open Settings in the app and choose Delete Account. That erases your saved vehicles, contact details, passcode and parking history from your device and signs you out.</p>
+<h3>Do I need to create a password for Metro Parking?</h3><p>No. You sign in with Apple only, so there is no password to create and no email to verify.</p>
+<h3>Who do I ask if I have a privacy question?</h3><p>Read the <a href="/metro-parking/privacy.html">Privacy Policy</a> first. You can also email support@vritam.com, since support is by email.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/sign-in-and-account-setup/delete-metro-parking-account/">How do I delete my account in a parking app?</a></li><li><a href="/guides/sign-in-and-account-setup/parking-app-without-a-password/">Can I use a parking app without a password?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
