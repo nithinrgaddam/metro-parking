@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>How Guest Parking Registration Works in Apartments - Metro Parking</title>
+<meta name="description" content="A resident&#x27;s walkthrough of apartment guest parking registration: get a passcode, add plates, pick a time and duration, and the permit is filed.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/how-guest-parking-registration-works/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="How Guest Parking Registration Works in Apartments - Metro Parking">
+<meta property="og:description" content="A resident&#x27;s walkthrough of apartment guest parking registration: get a passcode, add plates, pick a time and duration, and the permit is filed.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/how-guest-parking-registration-works/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/how-guest-parking-registration-works/#article",
+   "headline": "How does guest parking registration work in apartments?",
+   "description": "A resident's walkthrough of apartment guest parking registration: get a passcode, add plates, pick a time and duration, and the permit is filed.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/how-guest-parking-registration-works/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/how-guest-parking-registration-works/",
+   "datePublished": "2026-11-15",
+   "dateModified": "2026-11-15",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Do I have to register my guest every time they visit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually yes. A permit covers a set stretch of time, so a return visit needs its own registration. Saving the guest's plate makes repeat visits much faster."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who gives me the guest parking passcode?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Your property management or leasing office. It is not something you can create yourself, so ask them first. Our guide on finding your guest parking passcode has ideas on where to look."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens if my guest stays past the permit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "That depends on your community's rules, but an expired permit can mean a warning, a ticket or a tow. Setting a reminder or alarm for the end time is the simplest protection."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I cancel a guest permit if my guest leaves early?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In Metro Parking, yes: you can cancel a permit right from the list in the Usage tab. Other systems vary, so check how your community's system handles it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Metro Parking available to download yet?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not yet. It is an iPhone app that is coming to the App Store. For questions in the meantime, email support@vritam.com or visit the support page."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "One-Tap Guest Registration",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How does guest parking registration work in apartments?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/one-tap-guest-registration/">One-Tap Guest Registration</a></p>
+<h1>How does guest parking registration work in apartments?</h1>
+<p class="seo-meta">Updated 2026-11-15</p>
+<p class="seo-answer">Most apartment communities that control visitor parking ask residents to register each guest vehicle. You get a parking passcode from your property management or leasing office, then enter your guest's license plate, a start time and how long they will stay. The permit is recorded in the property's guest parking system, and whoever patrols the lot checks plates against it.</p>
+<h2>Why apartments ask you to register guests</h2>
+<p>Visitor spaces are limited, and every community wants to keep them for actual visitors. Registration is how the property tells a guest's car apart from a resident's car, a neighbor's overflow vehicle or someone who simply wandered into the lot.</p>
+<p>A registration is a small record: the vehicle's plate, the address or unit it is visiting, when the stay starts and when it ends. The property's guest parking system holds that record, and the people who enforce the lot use it to decide who gets a warning, a ticket or a tow.</p>
+<p>That is why an unregistered guest can end up with a penalty even if they parked in a visitor space and only stayed an hour.</p>
+<h2>The resident side, step by step</h2>
+<p>The exact screens differ from one community to the next, but the flow is almost always the same.</p>
+<ul><li><strong>Get the passcode.</strong> Ask your property management or leasing office for the guest parking passcode for your community.</li><li><strong>Collect the guest's plate.</strong> Ask your visitor for their license plate before they arrive. Some systems also want the state, make or color.</li><li><strong>Open the registration system.</strong> Enter the passcode and your unit or address so the permit is tied to your home.</li><li><strong>Choose a start time and a duration.</strong> Pick when the permit begins and how long the guest needs.</li><li><strong>Submit and keep proof.</strong> Note the end time so your guest knows when they need to leave or when you need to renew.</li></ul>
+<p>If a step asks for something your office has never mentioned, such as a unit code or a contact number, ask the leasing office rather than guessing. A wrong entry can leave a valid guest without a valid permit.</p>
+<h2>Where the passcode comes from</h2>
+<p>The passcode belongs to the property, not to you and not to any app. Only your property management or leasing office can give it to you, and some send it in a welcome packet, a resident portal or an email that is easy to lose.</p>
+<p>If you cannot find yours, start with <a href="/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/">where to find your guest parking passcode</a>. Once you have it, <a href="/metro-parking/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/">registering a guest vehicle with a parking passcode</a> covers the next step.</p>
+<h2>Limits and habits worth knowing</h2>
+<ul><li><strong>Register before the guest parks.</strong> It is far easier than disputing a ticket afterward.</li><li><strong>Watch the community's limits.</strong> Many communities cap how many hours a vehicle or a unit can use guest parking in a month. Check your lease or ask the office.</li><li><strong>Expect permits to end.</strong> A permit runs for the duration you chose, so a guest who stays longer needs a new registration or has to move the car.</li><li><strong>Cancel when plans change.</strong> If a guest leaves early, ending the permit keeps your hours from being used up.</li><li><strong>Keep plates handy.</strong> Frequent visitors, such as family or a regular babysitter, are quicker to register when you do not have to ask for their plate each time.</li></ul>
+<p>The weak spot of the manual process is repetition. Retyping the same plate and the same details for every visit is where most mistakes and missed registrations happen.</p>
+<h2>How Metro Parking handles the resident side</h2>
+<p>Metro Parking is an iPhone app, coming to the App Store, built around exactly this routine. You do the setup once, in three steps:</p>
+<ul><li>Sign in with Apple.</li><li>Add your unit and your parking passcode.</li><li>Save a plate.</li></ul>
+<p>After that, you choose a vehicle, a start time and a duration, tap Register, and the permit is filed with your property's guest parking system. Your email and phone fill in automatically. Metro Parking does not issue passcodes, so you still get yours from your leasing office.</p>
+<p>A few other things help once you are registering regularly:</p>
+<ul><li>The <strong>Usage tab</strong> lists the parking at your address, with a live badge on each permit showing whether it is active, upcoming or expired. You can cancel a permit right from the list.</li><li><strong>Monthly hours</strong> show month-to-date parking for each vehicle, so you can see where you stand against your community's limit.</li><li><strong>Multiple vehicles</strong> can be saved, each with an optional nickname, and you pick the right one at registration time.</li><li><strong>Reminders and calendar alarms</strong> before a permit expires are part of Metro Parking Pro.</li></ul>
+<p>The first 3 registrations are free. Pro removes that limit and is billed monthly or yearly through the App Store, and you can cancel anytime in iOS Settings. Your passcode is kept in the iOS Keychain, and the app uses no ad or analytics SDKs. You can read the details in the <a href="/metro-parking/privacy.html">Privacy Policy</a>, or see the <a href="/metro-parking/">home page</a> for an overview.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Do I have to register my guest every time they visit?</h3><p>Usually yes. A permit covers a set stretch of time, so a return visit needs its own registration. Saving the guest's plate makes repeat visits much faster.</p>
+<h3>Who gives me the guest parking passcode?</h3><p>Your property management or leasing office. It is not something you can create yourself, so ask them first. Our guide on <a href="/metro-parking/guides/one-tap-guest-registration/find-guest-parking-passcode/">finding your guest parking passcode</a> has ideas on where to look.</p>
+<h3>What happens if my guest stays past the permit?</h3><p>That depends on your community's rules, but an expired permit can mean a warning, a ticket or a tow. Setting a reminder or alarm for the end time is the simplest protection.</p>
+<h3>Can I cancel a guest permit if my guest leaves early?</h3><p>In Metro Parking, yes: you can cancel a permit right from the list in the Usage tab. Other systems vary, so check how your community's system handles it.</p>
+<h3>Is Metro Parking available to download yet?</h3><p>Not yet. It is an iPhone app that is coming to the App Store. For questions in the meantime, email support@vritam.com or visit the <a href="/metro-parking/support.html">support page</a>.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/">How do I register a guest vehicle with a parking passcode?</a></li><li><a href="/guides/one-tap-guest-registration/find-guest-parking-passcode/">Where do I find my guest parking passcode?</a></li><li><a href="/guides/sign-in-and-account-setup/parking-app-without-a-password/">Can I use a parking app without a password?</a></li><li><a href="/guides/private-by-design/where-parking-passcode-is-stored/">Where does a parking app keep my passcode?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
