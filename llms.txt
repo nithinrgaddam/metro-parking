@@ -30,6 +30,7 @@
 - [How do I register a guest vehicle with a parking passcode?](https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/register-guest-vehicle-parking-passcode/): Step-by-step: get your passcode, choose your unit, add the guest's plate and pick a duration. A first-timer's guide to registering guest parking.
 - [How does guest parking registration work in apartments?](https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/how-guest-parking-registration-works/): A resident's walkthrough of apartment guest parking registration: get a passcode, add plates, pick a time and duration, and the permit is filed.
 - [Why does the guest parking form ask for my phone and email every time?](https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/stop-retyping-phone-and-email-guest-parking/): Stop retyping your phone and email for guest parking. Contact details fill in, plates are saved once, and each registration is a vehicle and duration.
+- [How do I register guest parking ahead of time?](https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/register-guest-parking-ahead-of-time/): Register guest parking before your guest arrives: set a start time, watch the permit show as upcoming, and cancel from the list if plans change.
 
 ### Private by Design
 
