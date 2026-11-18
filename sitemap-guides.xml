@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/</loc>
@@ -91,5 +91,9 @@
   <url>
     <loc>https://nithinrgaddam.github.io/metro-parking/guides/one-tap-guest-registration/register-guest-parking-ahead-of-time/</loc>
     <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/guest-parking-for-a-party/</loc>
+    <lastmod>2026-11-18</lastmod>
   </url>
 </urlset>

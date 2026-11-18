@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>Guest Parking for a Party With Several Cars - Metro Parking</title>
+<meta name="description" content="Register each guest car, then watch every permit and its active, upcoming or expired status in one list. Here is how a host does it.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/guest-parking-for-a-party/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="Guest Parking for a Party With Several Cars - Metro Parking">
+<meta property="og:description" content="Register each guest car, then watch every permit and its active, upcoming or expired status in one list. Here is how a host does it.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/guest-parking-for-a-party/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/guest-parking-for-a-party/#article",
+   "headline": "How do I handle guest parking for a party with several cars?",
+   "description": "Register each guest car, then watch every permit and its active, upcoming or expired status in one list. Here is how a host does it.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/guest-parking-for-a-party/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/guest-parking-for-a-party/",
+   "datePublished": "2026-11-18",
+   "dateModified": "2026-11-18",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can I register guest cars before the party starts?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. You choose a start time when you register, so you can set cars up in advance. A permit that has not started yet shows an upcoming badge in the Usage tab."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need Pro for a party with five cars?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The first 3 registrations are free, and each car is one registration. Going past that needs Metro Parking Pro, which removes the free limit and gives you unlimited registrations."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if a guest cancels or leaves early?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You can cancel a permit right from the list in the Usage tab. Open the permit for that car and cancel it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where do I get the parking passcode?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "From your property management or leasing office. Metro Parking does not issue passcodes. You enter yours once in Settings, along with your unit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will a permit extend automatically if the party runs late?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Permits are not extended automatically. Pro adds expiration reminders and calendar alarms, so you get a heads-up before a permit ends."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Active Permits and Usage Tab",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How do I handle guest parking for a party with several cars?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/active-permits-and-usage-tab/">Active Permits and Usage Tab</a></p>
+<h1>How do I handle guest parking for a party with several cars?</h1>
+<p class="seo-meta">Updated 2026-11-18</p>
+<p class="seo-answer">Find out how your community handles guest parking, then collect every guest's license plate before the day. Register each car for a window that covers the whole party plus a little buffer, and check that every plate is on the list before guests arrive. Ask your property management about limits on guest vehicles or monthly guest hours, since the rules differ between communities.</p>
+<h2>Sort out the rules and the plates first</h2>
+<p>A party with several cars is different from one visitor. Many communities want each guest vehicle registered with the guest parking system, and some cap how many cars or how many hours you can use. Ask your property management or leasing office before the day, not when the first car pulls in.</p>
+<p>Questions worth asking:</p>
+<ul><li>How many guest vehicles can I register at the same time?</li><li>How long can a single permit last?</li><li>Is there a monthly limit on guest parking hours?</li><li>Where do I get my parking passcode, if I do not have one yet?</li></ul>
+<p>Then ask your guests for their plates. A short message a few days ahead works well: "Send me your license plate and roughly when you will arrive." Guests who carpool can share one car, which means fewer registrations for you.</p>
+<p>Pick one window for the party. Start it a little before the first guest arrives and end it after the last one should leave. A buffer is cheaper than a scramble at 10 pm.</p>
+<h2>Register each car in Metro Parking</h2>
+<p><a href="/metro-parking/">Metro Parking</a> is an iPhone app, coming to the App Store, for residents who register guest parking at their community. You save plates once, then register a guest vehicle with a few taps. The permit is filed with your property's guest parking system, so the rules from your management office still apply.</p>
+<h3>One-time setup</h3>
+<ul><li>Sign in with Apple. There is no password to create.</li><li>In Settings, add your unit and your parking passcode. The passcode comes from your property management or leasing office. Metro Parking does not issue passcodes.</li><li>Save a plate.</li></ul>
+<h3>For each guest car</h3>
+<ul><li>Add the guest's plate. You can give it an optional nickname, such as the guest's name, so the right car is easy to spot.</li><li>Tap Register, then choose the vehicle, a start time, a duration and a location.</li><li>Repeat for the next car. Your email and phone fill in automatically each time.</li></ul>
+<p>Because you pick the start time, you can register cars ahead of the party. Do it the evening before and the day of is much calmer.</p>
+<h2>Watch every permit in the Usage tab</h2>
+<p>Once the cars are registered, the <strong>Usage tab</strong> shows all parking at your address in one list. Each permit carries a live status badge, so you do not have to remember which car is which.</p>
+<ul><li><strong>Upcoming</strong>: registered, but the start time has not arrived yet.</li><li><strong>Active</strong>: the permit is running right now.</li><li><strong>Expired</strong>: the permit has ended.</li></ul>
+<p>For a longer explanation of each badge, see <a href="/metro-parking/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/">what active, upcoming and expired parking permits mean</a>.</p>
+<p>Treat the list as your checklist. Before guests arrive, scan it and make sure every plate you expect has a permit. During the party, a late or cancelled guest can be handled right from the list. See <a href="/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">how to cancel a guest parking permit</a>. Afterward, everything should read expired.</p>
+<h2>The free limit and when Pro makes sense</h2>
+<p>The first 3 registrations are free. That is not a time-limited trial. It is three registrations, and each car you register counts as one.</p>
+<p>A small gathering with up to three cars fits inside that. A bigger party will go past it, and that is where Metro Parking Pro comes in. Pro removes the free registration limit and gives you unlimited registrations, plus expiration reminders and calendar alarms. It is available monthly or yearly through the App Store, and you can cancel anytime in iOS Settings under Subscriptions. Pro features stay until the end of the current billing period.</p>
+<p>The reminders and alarms are handy if a party tends to run long. You get a nudge before a permit expires instead of finding out from a notice on a windshield.</p>
+<h2>When this approach works, and when it does not</h2>
+<p>This works well when you have your passcode, a handful of cars and plates you can collect ahead of time. It is less tidy when guests do not know their plate until they arrive. You can still register each car once you have the plate, but plan a minute at the door for it.</p>
+<p>A few honest limits to keep in mind:</p>
+<ul><li>Metro Parking does not extend permits automatically and does not stop you from registering past your community's limit.</li><li>It shows month-to-date parking hours for each vehicle, which helps you see where you stand against your community's limit.</li><li>It is an iPhone app only.</li><li>Permits are filed with your property's guest parking system, so your management's rules decide what is allowed.</li></ul>
+<p>Questions about your account or the app can go to <a href="/metro-parking/support.html">support</a>. If you are curious how your data is handled, the <a href="/metro-parking/privacy.html">privacy policy</a> covers it.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Can I register guest cars before the party starts?</h3><p>Yes. You choose a start time when you register, so you can set cars up in advance. A permit that has not started yet shows an upcoming badge in the Usage tab.</p>
+<h3>Do I need Pro for a party with five cars?</h3><p>The first 3 registrations are free, and each car is one registration. Going past that needs Metro Parking Pro, which removes the free limit and gives you unlimited registrations.</p>
+<h3>What if a guest cancels or leaves early?</h3><p>You can cancel a permit right from the list in the Usage tab. Open the permit for that car and cancel it.</p>
+<h3>Where do I get the parking passcode?</h3><p>From your property management or leasing office. Metro Parking does not issue passcodes. You enter yours once in Settings, along with your unit.</p>
+<h3>Will a permit extend automatically if the party runs late?</h3><p>No. Permits are not extended automatically. Pro adds expiration reminders and calendar alarms, so you get a heads-up before a permit ends.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/">What do active, upcoming and expired parking permits mean?</a></li><li><a href="/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">How do I cancel a guest parking permit?</a></li><li><a href="/guides/one-tap-guest-registration/stop-retyping-phone-and-email-guest-parking/">Why does the guest parking form ask for my phone and email every time?</a></li><li><a href="/guides/one-tap-guest-registration/register-guest-parking-ahead-of-time/">How do I register guest parking ahead of time?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
