@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>How do I know my guest parking registration worked? - Metro Parking</title>
+<meta name="description" content="Check that your guest parking registration worked: find the permit in your Usage tab, read its status badge, and email support if it looks wrong.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/check-guest-parking-registration-worked/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="How do I know my guest parking registration worked? - Metro Parking">
+<meta property="og:description" content="Check that your guest parking registration worked: find the permit in your Usage tab, read its status badge, and email support if it looks wrong.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/check-guest-parking-registration-worked/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/check-guest-parking-registration-worked/#article",
+   "headline": "How do I know my guest parking registration worked?",
+   "description": "Check that your guest parking registration worked: find the permit in your Usage tab, read its status badge, and email support if it looks wrong.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/check-guest-parking-registration-worked/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/check-guest-parking-registration-worked/",
+   "datePublished": "2026-11-19",
+   "dateModified": "2026-11-19",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What should I see in the Usage tab after I register?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You should see a permit for your guest's vehicle with a status badge. It reads active if the permit has started, or upcoming if you chose a later start time."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "My permit says upcoming. Did something go wrong?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Upcoming means the permit is set to begin at the start time you picked. It changes to active when that time arrives."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "The permit is not in the list. What do I do?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Check Settings for your unit and parking passcode, and confirm the plate is saved. If the permit still doesn't show, email support@vritam.com with the plate, start time and duration you chose."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I call or chat with support about a registration?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Support is by email only, at support@vritam.com. Include your plate, the time you registered and what the Usage tab shows, so the reply can be specific."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if I registered the wrong plate or time?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You can cancel the permit right from the list in the Usage tab, then register again with the correct details. Our guide on cancelling a guest parking permit walks through it."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Active Permits and Usage Tab",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/active-permits-and-usage-tab/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How do I know my guest parking registration worked?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/active-permits-and-usage-tab/">Active Permits and Usage Tab</a></p>
+<h1>How do I know my guest parking registration worked?</h1>
+<p class="seo-meta">Updated 2026-11-19</p>
+<p class="seo-answer">A guest parking registration worked if you can see the permit afterward with the right plate, start time and end time, and a status that matches what you chose. Many systems also send a confirmation. If you can't find the permit anywhere, don't assume it went through. Ask your property's leasing office or the parking system's support to confirm before your guest arrives.</p>
+<h2>What a successful registration looks like</h2>
+<p>Tapping Register and seeing no error is not the same as knowing the permit exists. The real proof is the permit itself, listed somewhere you can open again.</p>
+<p>Four things to check on it:</p>
+<ul><li><strong>The plate.</strong> It matches the car your guest is actually driving, character for character.</li><li><strong>The start time.</strong> It begins when you meant it to, not earlier or later.</li><li><strong>The duration.</strong> It runs long enough to cover the visit, with some room to spare.</li><li><strong>The status.</strong> It shows the permit is in force now, or will be at the start time you picked.</li></ul>
+<p>If all four line up, you are done. A wrong plate is an easy slip to make and an annoying one to discover later, so read it twice.</p>
+<h2>Where to look in Metro Parking</h2>
+<p>In Metro Parking, an iPhone app for guest parking, the place to look is the <strong>Usage tab</strong>. It lists all parking at your address, and every permit in it carries a live status badge: <strong>active</strong>, <strong>upcoming</strong> or <strong>expired</strong>.</p>
+<ul><li><strong>Active</strong> - the permit is in force right now.</li><li><strong>Upcoming</strong> - the permit is set to start at a later time you chose.</li><li><strong>Expired</strong> - the permit has run its course.</li></ul>
+<p>For a nervous host, an active or upcoming badge on the permit you just made is the sign to look for. The badge is live, so it shows where the permit stands right now, and you can open the tab again whenever you want to check.</p>
+<p>For more on each label, see <a href="/metro-parking/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/">What do active, upcoming and expired parking permits mean?</a></p>
+<h2>A quick check after you register</h2>
+<ul><li>Open the <strong>Usage</strong> tab right after you register.</li><li>Find the new permit in the list and check the vehicle, start time and duration.</li><li>Read the badge. If you started the permit now, expect <strong>active</strong>. If you set a later start, expect <strong>upcoming</strong>.</li><li>Look again shortly before your guest arrives, so there are no surprises at the curb.</li></ul>
+<p>Registering ahead of a visit with a later start time is a good way to get it out of your head. It is normal for the permit to show upcoming until that time arrives.</p>
+<p>Metro Parking also shows month-to-date parking hours for each vehicle, which helps you see where you stand against your community's limit. If you have Metro Parking Pro, expiration reminders and calendar alarms can tell you when a permit is about to end.</p>
+<h2>If the permit is missing or looks wrong</h2>
+<p>Don't register a second time straight away. The first 3 registrations are free, and checking the Usage tab first keeps you from creating a duplicate.</p>
+<p>Run through the setup before you worry:</p>
+<ul><li>In <strong>Settings</strong>, check that your unit is chosen and your parking passcode is entered correctly. The passcode comes from your property management or leasing office. Metro Parking does not issue it.</li><li>Check that the vehicle's license plate is saved and that you picked the right vehicle when you tapped Register.</li><li>If the permit has the wrong plate or time, <a href="/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">cancel it from the list</a> and register again with the right details.</li></ul>
+<p>If it still looks wrong, email <strong>support@vritam.com</strong>. Say which plate, start time and duration you chose, and what the Usage tab shows. Support is by email, so put those details in your first message. You can also find the address on the <a href="/metro-parking/support.html">support page</a>.</p>
+<h2>Good habits for a first-time host</h2>
+<ul><li>Register a little before your guest arrives, so you have time to check and fix anything.</li><li>Keep your regular visitors' plates saved, with a nickname if it helps, so you pick the right vehicle from your list.</li><li>Check the Usage tab once more on the day of the visit.</li><li>Hosting several cars at once? See <a href="/metro-parking/guides/active-permits-and-usage-tab/guest-parking-for-a-party/">How do I handle guest parking for a party with several cars?</a></li></ul>
+<p>Setup is done once: Sign in with Apple, add your unit and parking passcode, and save a plate. After that, checking the Usage tab is the habit that tells you everything went through. You can read more on the <a href="/metro-parking/">home page</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>What should I see in the Usage tab after I register?</h3><p>You should see a permit for your guest's vehicle with a status badge. It reads active if the permit has started, or upcoming if you chose a later start time.</p>
+<h3>My permit says upcoming. Did something go wrong?</h3><p>No. Upcoming means the permit is set to begin at the start time you picked. It changes to active when that time arrives.</p>
+<h3>The permit is not in the list. What do I do?</h3><p>Check Settings for your unit and parking passcode, and confirm the plate is saved. If the permit still doesn't show, email support@vritam.com with the plate, start time and duration you chose.</p>
+<h3>Can I call or chat with support about a registration?</h3><p>Support is by email only, at support@vritam.com. Include your plate, the time you registered and what the Usage tab shows, so the reply can be specific.</p>
+<h3>What if I registered the wrong plate or time?</h3><p>You can cancel the permit right from the list in the Usage tab, then register again with the correct details. Our guide on <a href="/metro-parking/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">cancelling a guest parking permit</a> walks through it.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/active-permits-and-usage-tab/permit-status-active-upcoming-expired/">What do active, upcoming and expired parking permits mean?</a></li><li><a href="/guides/active-permits-and-usage-tab/guest-parking-for-a-party/">How do I handle guest parking for a party with several cars?</a></li><li><a href="/guides/active-permits-and-usage-tab/cancel-guest-parking-permit/">How do I cancel a guest parking permit?</a></li><li><a href="/guides/one-tap-guest-registration/stop-retyping-phone-and-email-guest-parking/">Why does the guest parking form ask for my phone and email every time?</a></li><li><a href="/guides/one-tap-guest-registration/register-guest-parking-ahead-of-time/">How do I register guest parking ahead of time?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
