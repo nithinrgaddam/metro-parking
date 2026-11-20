@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>What does a guest parking app subscription include? - Metro Parking</title>
+<meta name="description" content="What a guest parking subscription usually adds, and what Metro Parking Pro includes next to the first 3 free registrations.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/guest-parking-app-subscription-includes/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="What does a guest parking app subscription include? - Metro Parking">
+<meta property="og:description" content="What a guest parking subscription usually adds, and what Metro Parking Pro includes next to the first 3 free registrations.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/guest-parking-app-subscription-includes/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/guest-parking-app-subscription-includes/#article",
+   "headline": "What does a guest parking app subscription include?",
+   "description": "What a guest parking subscription usually adds, and what Metro Parking Pro includes next to the first 3 free registrations.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/guest-parking-app-subscription-includes/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/guest-parking-app-subscription-includes/",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is there a free trial for Metro Parking Pro?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The free part is the first 3 registrations, not a time-limited trial. Nothing counts down while you use them."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does Metro Parking Pro cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No prices are listed here. Pro is available monthly or yearly, and you can see the amount on the App Store subscription screen before you confirm."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a reminder stop my guest from overstaying?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A reminder or calendar alarm prompts you before the permit expires. You still decide what to do, and the app does not extend permits for you."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Metro Parking on the App Store yet?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is coming to the App Store, and it is an iPhone app. Subscriptions are billed and managed through the App Store."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens to Pro features when I cancel?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They stay until the end of the current billing period. After that, Pro features end."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Expiration Reminders and Calendar Alarms",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/expiration-reminders-and-calendar-alarms/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "What does a guest parking app subscription include?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/expiration-reminders-and-calendar-alarms/">Expiration Reminders and Calendar Alarms</a></p>
+<h1>What does a guest parking app subscription include?</h1>
+<p class="seo-meta">Updated 2026-11-20</p>
+<p class="seo-answer">A guest parking app subscription usually lifts the cap on how many guest registrations you can make for free. It often adds convenience extras such as expiration reminders and calendar alarms. Billing is typically monthly or yearly through the App Store and renews automatically until you cancel. Prices differ from app to app, so check the subscription screen before you confirm.</p>
+<h2>What a guest parking subscription usually covers</h2>
+<p>Most guest parking apps work the same way. You get a small free allowance so you can try the app with real guests, then a subscription removes the limit.</p>
+<ul><li>Unlimited guest registrations instead of a fixed free count.</li><li>Extras that save you from watching the clock, such as a reminder before a permit expires.</li><li>Calendar alarms, for people who would rather have an alarm than a notification.</li><li>Billing handled by the App Store, monthly or yearly, renewing until you cancel.</li></ul>
+<p>What a subscription cannot do is change the rules at your property. You still need a parking passcode from your property management or leasing office, and your community's own limits still apply.</p>
+<h2>What Metro Parking Pro includes next to the free registrations</h2>
+<p>Metro Parking is an iPhone app that files your guest's permit with your property's guest parking system. It is coming to the App Store. Here is how the two tiers line up.</p>
+<ul><li><strong>Free:</strong> your first 3 registrations.</li><li><strong>Metro Parking Pro:</strong> removes the free registration limit and gives you unlimited registrations, reminders and calendar alarms.</li></ul>
+<p>The free part is a count, not a countdown. It is the first 3 registrations, not a time-limited trial, so nothing expires while you decide.</p>
+<p>Reminders and calendar alarms come with Pro. If they are the reason you are considering a subscription, that is the feature to weigh.</p>
+<h2>How the reminders and calendar alarms work</h2>
+<ul><li><strong>Reminder:</strong> Metro Parking notifies you before a permit expires, so you have time to act.</li><li><strong>Calendar alarm:</strong> it can drop an alarm at the exact expiration time, which suits people who prefer alarms.</li></ul>
+<p>Both are prompts, nothing more. They do not extend a permit, and they cannot make a guest move their car. They just make sure the expiration does not catch you by surprise.</p>
+<p>For a closer look at each option, read <a href="/metro-parking/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/">how to get a reminder before guest parking expires</a> and <a href="/metro-parking/guides/expiration-reminders-and-calendar-alarms/calendar-alarm-for-parking-expiration/">whether a calendar alarm is right for parking expiration</a>.</p>
+<h2>Billing, prices and cancelling</h2>
+<p>Pro is available monthly or yearly. It renews automatically until you cancel it in your App Store settings. No prices are listed here, so look at the amount on the App Store subscription screen before you confirm.</p>
+<p>To cancel at any time:</p>
+<ul><li>Open the iOS Settings app and tap your name.</li><li>Tap Subscriptions and select Metro Parking.</li><li>Choose cancel.</li></ul>
+<p>Your Pro features stay until the end of the current billing period. If anything about your subscription is unclear, write to support@vritam.com or visit the <a href="/metro-parking/support.html">support page</a>.</p>
+<h2>When Pro is worth it, and when the free registrations are enough</h2>
+<ul><li><strong>A few visitors a year:</strong> the first 3 free registrations may be all you need.</li><li><strong>Guests who come often:</strong> unlimited registrations means you never hit a wall mid-month.</li><li><strong>You have lost track of an expiration before:</strong> reminders and calendar alarms are built for exactly that.</li><li><strong>You are not sure yet:</strong> set up first, then register a guest. Try it before you pay for it.</li></ul>
+<p>Setup is three steps, done once: sign in with Apple, add your unit and parking passcode, and save a plate. After that, you pick a vehicle and a duration. You can read more on the <a href="/metro-parking/">home page</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Is there a free trial for Metro Parking Pro?</h3><p>The free part is the first 3 registrations, not a time-limited trial. Nothing counts down while you use them.</p>
+<h3>How much does Metro Parking Pro cost?</h3><p>No prices are listed here. Pro is available monthly or yearly, and you can see the amount on the App Store subscription screen before you confirm.</p>
+<h3>Can a reminder stop my guest from overstaying?</h3><p>No. A reminder or calendar alarm prompts you before the permit expires. You still decide what to do, and the app does not extend permits for you.</p>
+<h3>Is Metro Parking on the App Store yet?</h3><p>It is coming to the App Store, and it is an iPhone app. Subscriptions are billed and managed through the App Store.</p>
+<h3>What happens to Pro features when I cancel?</h3><p>They stay until the end of the current billing period. After that, Pro features end.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/expiration-reminders-and-calendar-alarms/reminder-before-guest-parking-expires/">How do I get a reminder before guest parking expires?</a></li><li><a href="/guides/expiration-reminders-and-calendar-alarms/calendar-alarm-for-parking-expiration/">Should I use a calendar alarm for parking expiration?</a></li><li><a href="/guides/active-permits-and-usage-tab/guest-parking-for-a-party/">How do I handle guest parking for a party with several cars?</a></li><li><a href="/guides/active-permits-and-usage-tab/check-guest-parking-registration-worked/">How do I know my guest parking registration worked?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
