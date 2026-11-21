@@ -22,6 +22,7 @@
 
 - [How do I track guest parking hours each month?](https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/track-guest-parking-hours-monthly/): Add up guest parking hours per vehicle each month and compare them with your community's limit. Here is a simple method and where the app helps.
 - [How do I avoid going over my guest parking hour limit?](https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/avoid-going-over-guest-parking-hour-limit/): Plan guest visits around a monthly parking hour cap by tracking hours per vehicle, and know what Metro Parking shows and what it leaves to you.
+- [What is a monthly guest parking hour limit?](https://nithinrgaddam.github.io/metro-parking/guides/monthly-hours-tracking/monthly-guest-parking-hour-limit/): A monthly guest parking hour limit caps how long visitors can park each month. Learn how it works, what to ask management, and how to track hours.
 
 ### Multiple Vehicles
 
