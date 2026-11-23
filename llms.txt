@@ -28,6 +28,7 @@
 ### Multiple Vehicles
 
 - [How do I handle guest parking for family who visit often?](https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/): Keep a regular visitor's plate saved with a nickname in Metro Parking, then pick it at registration so repeat visits take one tap.
+- [Can I nickname my guest's car in a parking app?](https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/nickname-guest-car-parking-app/): Yes, a saved plate can carry a nickname. Here is how nicknames help you pick the right guest car fast when you keep several plates on file.
 
 ### One-Tap Guest Registration
 
