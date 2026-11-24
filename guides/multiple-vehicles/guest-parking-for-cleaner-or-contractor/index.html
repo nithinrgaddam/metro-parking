@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>Guest Parking for a House Cleaner or Contractor - Metro Parking</title>
+<meta name="description" content="How to register a regular house cleaner or contractor as a guest, and how to save each plate once with a nickname so every visit is quick.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-cleaner-or-contractor/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="Guest Parking for a House Cleaner or Contractor - Metro Parking">
+<meta property="og:description" content="How to register a regular house cleaner or contractor as a guest, and how to save each plate once with a nickname so every visit is quick.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-cleaner-or-contractor/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-cleaner-or-contractor/#article",
+   "headline": "How do I set up guest parking for my house cleaner or contractor?",
+   "description": "How to register a regular house cleaner or contractor as a guest, and how to save each plate once with a nickname so every visit is quick.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-cleaner-or-contractor/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/guest-parking-for-cleaner-or-contractor/",
+   "datePublished": "2026-11-24",
+   "dateModified": "2026-11-24",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can my house cleaner use guest parking?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on your property. Some communities allow it, and others require a vendor or service permit, so ask your leasing office or property management before you register anyone."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I have to re-enter my cleaner's plate every week?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not in Metro Parking. You save the plate once, add a nickname if you like, and then each visit is just choosing the vehicle and a duration."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if my contractor drives a different truck some days?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Save each plate as its own vehicle with its own nickname, then pick the one that is actually coming. Metro Parking keeps every plate you use on file."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a passcode to register a guest?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, a parking passcode from your property management or leasing office is required. Metro Parking does not issue passcodes. You enter yours once in Settings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I download Metro Parking today?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not yet. It is an iPhone app that is coming to the App Store, and it is not available for other platforms. Questions can go to support@vritam.com."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Multiple Vehicles",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/multiple-vehicles/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How do I set up guest parking for my house cleaner or contractor?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/multiple-vehicles/">Multiple Vehicles</a></p>
+<h1>How do I set up guest parking for my house cleaner or contractor?</h1>
+<p class="seo-meta">Updated 2026-11-24</p>
+<p class="seo-answer">Start by asking your leasing office or property management whether a cleaner or contractor can be registered as a guest, because many communities cap how long one vehicle can use guest parking in a month. If it is allowed, register the helper's plate for each visit with a duration that covers the job, plus a little extra. If guest rules do not fit, ask about a service or contractor permit instead.</p>
+<h2>Check whether helpers count as guests at your property</h2>
+<p>Rules differ from one community to the next. Some treat a cleaner or contractor like any other guest. Others have a separate vendor or service process, especially for work crews, large trucks or jobs that run for days.</p>
+<p>Before you set anything up, ask the leasing office:</p>
+<ul><li>Can a regular helper park under guest registration, or is there a vendor or service permit?</li><li>What is the longest one vehicle can be registered at a time, and is there a monthly limit?</li><li>Do I need a parking passcode to register guests, and where do I get it?</li></ul>
+<p>If the office says helpers must go through a different channel, follow that. Guest registration is only the right tool when your property lets you use it for the people who work at your home.</p>
+<h2>Why regular helpers get tedious to register</h2>
+<p>A weekly cleaner means the same plate, the same contact details and the same visit length, over and over. A renovation is worse: a painter, then an electrician, then the painter again, each with a different vehicle.</p>
+<p>Typing a plate into a form every time is where mistakes creep in. One wrong character and the permit does not match the car in your lot. The fix is simple: keep each helper's plate on file once, with a label that tells you whose car it is.</p>
+<h2>Save each plate once with a nickname</h2>
+<p><a href="/metro-parking/">Metro Parking</a> is an iPhone app for registering guest parking at your community. It is coming to the App Store. You keep every plate you use on file, and each plate can have an optional nickname, such as "Maria - cleaner" or "Dave - plumber". You pick the right vehicle when you register, so there is no retyping.</p>
+<h3>Setup, once</h3>
+<ul><li>Sign in with Apple. There is no password to create.</li><li>In Settings, add your unit and your parking passcode. The passcode comes from your property management or leasing office. Metro Parking does not issue it.</li><li>Save a plate for each regular helper and give it a nickname.</li></ul>
+<h3>Each visit</h3>
+<ul><li>Tap Register.</li><li>Pick the helper's vehicle.</li><li>Choose the start time and duration.</li></ul>
+<p>Your email and phone fill in automatically, and the permit is filed with your property's guest parking system. Whether your community's system accepts it depends on your property, so confirm that with the leasing office first. For more on labeling cars, see <a href="/metro-parking/guides/multiple-vehicles/nickname-guest-car-parking-app/">Can I nickname my guest's car in a parking app?</a></p>
+<h2>Pick durations that match the job</h2>
+<p>A cleaner's visit is predictable, so set a duration that covers the usual time plus a buffer. Contractors are harder to pin down. If a job might run long, a longer registration is easier than a late scramble, as long as your property allows it.</p>
+<p>You can choose a start time, so you can register ahead of the helper's usual arrival. The Usage tab shows all parking at your address, with a live badge on each permit: active, upcoming or expired. If a visit gets canceled, you can cancel the permit from that list.</p>
+<p>Monthly hours tracking shows month-to-date parking hours for each vehicle. That helps you see where you stand against your community's limit when the same helper visits every week. It shows you the number. It does not stop a registration for you, so keep an eye on it.</p>
+<p>Metro Parking Pro also adds expiration reminders and calendar alarms, handy when a contractor tends to run over.</p>
+<h2>When this is the right approach, and when it is not</h2>
+<p>It fits best when the same few people drive to your home regularly and your property lets you register them as guests. Saved plates with nicknames turn each visit into picking a vehicle and a duration.</p>
+<p>It is a poor fit if your property requires a separate vendor permit, or if the helper's company handles parking itself. If a crew arrives in several vehicles, you can save each plate, but check how many guest vehicles your property allows at once.</p>
+<p>One cost note: the first 3 registrations are free. A weekly helper will use those up quickly, and Metro Parking Pro removes the limit. Pro is available monthly or yearly through the App Store. If you also host relatives often, <a href="/metro-parking/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/">this guide on frequent family visitors</a> covers the same idea.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Can my house cleaner use guest parking?</h3><p>It depends on your property. Some communities allow it, and others require a vendor or service permit, so ask your leasing office or property management before you register anyone.</p>
+<h3>Do I have to re-enter my cleaner&#x27;s plate every week?</h3><p>Not in Metro Parking. You save the plate once, add a nickname if you like, and then each visit is just choosing the vehicle and a duration.</p>
+<h3>What if my contractor drives a different truck some days?</h3><p>Save each plate as its own vehicle with its own nickname, then pick the one that is actually coming. Metro Parking keeps every plate you use on file.</p>
+<h3>Do I need a passcode to register a guest?</h3><p>Yes, a parking passcode from your property management or leasing office is required. Metro Parking does not issue passcodes. You enter yours once in Settings.</p>
+<h3>Can I download Metro Parking today?</h3><p>Not yet. It is an iPhone app that is coming to the App Store, and it is not available for other platforms. Questions can go to support@vritam.com.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/multiple-vehicles/guest-parking-for-frequent-family-visitors/">How do I handle guest parking for family who visit often?</a></li><li><a href="/guides/multiple-vehicles/nickname-guest-car-parking-app/">Can I nickname my guest&#x27;s car in a parking app?</a></li><li><a href="/guides/monthly-hours-tracking/monthly-guest-parking-hour-limit/">What is a monthly guest parking hour limit?</a></li><li><a href="/guides/monthly-hours-tracking/plan-guest-parking-for-a-week-long-visit/">How do I plan guest parking for a week-long visit?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
