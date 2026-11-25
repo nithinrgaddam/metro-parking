@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>How to Set Up Guest Parking After Moving In - Metro Parking</title>
+<meta name="description" content="A first-week checklist for new residents: get your parking passcode, sign in, add your unit, save a plate, and register guests without any back and forth.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/set-up-guest-parking-after-moving-in/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="How to Set Up Guest Parking After Moving In - Metro Parking">
+<meta property="og:description" content="A first-week checklist for new residents: get your parking passcode, sign in, add your unit, save a plate, and register guests without any back and forth.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/set-up-guest-parking-after-moving-in/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/set-up-guest-parking-after-moving-in/#article",
+   "headline": "How do I set up guest parking after moving in?",
+   "description": "A first-week checklist for new residents: get your parking passcode, sign in, add your unit, save a plate, and register guests without any back and forth.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/set-up-guest-parking-after-moving-in/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/set-up-guest-parking-after-moving-in/",
+   "datePublished": "2026-11-25",
+   "dateModified": "2026-11-25",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can I get the parking passcode from the app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Metro Parking does not issue passcodes. Your property management or leasing office gives you the passcode, and you enter it in Settings along with your unit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need to create a password or verify an email?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You sign in with Apple only, so there is no password to create and no email to verify. Your unit and passcode go in Settings after that."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many plates can I save?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You can keep every plate you use on file, and each one can have an optional nickname. You choose the right vehicle when you register a guest."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will this work at every community?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Permits are filed with your property's guest parking system, so it depends on your community. Ask your leasing office how guest parking works at your address, and email support@vritam.com if you have questions."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens to my data if I delete my account?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Delete Account in Settings erases your saved vehicles, contact details, passcode and parking history from your device, and signs you out. You can read the Privacy Policy for more."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Sign In and Account Setup",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/sign-in-and-account-setup/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How do I set up guest parking after moving in?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/sign-in-and-account-setup/">Sign In and Account Setup</a></p>
+<h1>How do I set up guest parking after moving in?</h1>
+<p class="seo-meta">Updated 2026-11-25</p>
+<p class="seo-answer">Ask your leasing office or property management for the guest parking passcode or registration details, since you usually can't register guests without them. Then set up your unit and your own vehicle details, and save any plates your regular visitors use. Do this in your first week, so the first time a friend or delivery driver needs a spot, you aren't scrambling.</p>
+<h2>Start with the leasing office</h2>
+<p>Guest parking rules belong to your property, not to you. Before you try to register anyone, you need to know how your community handles it. The leasing office or property management is the only reliable source.</p>
+<p>When you pick up your keys or drop in during move-in week, ask these questions:</p>
+<ul><li>What is the parking passcode or code for my unit?</li><li>How do guests get registered, and where?</li><li>How long can one guest stay on a single permit?</li><li>Is there a monthly limit on guest parking hours for my unit?</li><li>Which spaces or lots are guest parking, and which are off limits?</li><li>Who do I contact if a guest gets a warning or a tow notice?</li></ul>
+<p>Write the answers down or take a photo of the page. The passcode and the monthly limit are the two details you will use again and again.</p>
+<h2>A first-week checklist</h2>
+<p>Here is the whole setup in order. It takes a few minutes once you have the passcode.</p>
+<ul><li><strong>Get your parking passcode</strong> from the leasing office or property management.</li><li><strong>Sign in with Apple</strong> in the app, so there is no password to make and no email to verify.</li><li><strong>Open Settings</strong> and choose your unit.</li><li><strong>Enter your parking passcode</strong> in the same place.</li><li><strong>Save a plate.</strong> Add your own vehicle first, or the plate your most frequent visitor drives.</li><li><strong>Register a test guest</strong> when you next have a visitor: tap Register, pick the vehicle and a duration, and you are done.</li></ul>
+<p>Metro Parking is an iPhone app built around exactly these steps. You do the setup once. After that, registering a guest is a vehicle, a start time, a duration and a location, and the permit is filed with your property's guest parking system. Your email and phone fill in automatically.</p>
+<p>One thing to be clear about: Metro Parking does not issue passcodes. The passcode comes from your property management or leasing office, which is why asking them is step one.</p>
+<h2>Save plates before you need them</h2>
+<p>The slow part of guest parking is usually typing a plate number while someone circles the block waiting for an answer. You can avoid that by saving plates in advance.</p>
+<p>Think about who parks at your place most often: family, a partner, a regular babysitter or friend. Add their plates once, and give each a nickname if it helps you tell them apart. When they arrive, you pick the right vehicle from your list instead of asking for the number.</p>
+<p>You can keep as many vehicles on file as you need. It is worth a quick text to your regulars, asking them to send their plate details while you are still settling in.</p>
+<h2>Keep an eye on permits and monthly hours</h2>
+<p>Setting up is the easy half. The other half is not losing track of what is active.</p>
+<ul><li>The <strong>Usage tab</strong> shows all parking at your address, with a status badge on each permit: active, upcoming or expired.</li><li>You can <strong>cancel a permit</strong> from that list if plans change.</li><li><strong>Monthly hours</strong> show month-to-date parking for each vehicle, which helps you see where you stand against your community's limit.</li><li><strong>Reminders and calendar alarms</strong> can warn you before a permit expires. These come with Metro Parking Pro.</li></ul>
+<p>These tools help you stay on top of things, but they do not stop you from going over a limit. You still need to know your community's rules, which is another reason to ask the leasing office early.</p>
+<h2>What to know about cost and availability</h2>
+<p>The first 3 registrations are free, so you can try the whole flow before you pay for anything. Metro Parking Pro removes that limit and adds unlimited registrations, reminders and calendar alarms. It is available monthly or yearly, and you manage it through the App Store.</p>
+<p>Metro Parking is listed as coming to the App Store, so it is not downloadable yet. In the meantime, you can still do the most important part of the checklist: ask your leasing office for your passcode and your community's guest rules.</p>
+<p>Your data stays private. Passcodes are stored in the iOS Keychain, and there are no ad or analytics SDKs. If you ever want out, you can <a href="/metro-parking/guides/sign-in-and-account-setup/delete-metro-parking-account/">delete your account</a> in Settings, and read more about <a href="/metro-parking/guides/sign-in-and-account-setup/parking-app-without-a-password/">using a parking app without a password</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Can I get the parking passcode from the app?</h3><p>No. Metro Parking does not issue passcodes. Your property management or leasing office gives you the passcode, and you enter it in Settings along with your unit.</p>
+<h3>Do I need to create a password or verify an email?</h3><p>No. You sign in with Apple only, so there is no password to create and no email to verify. Your unit and passcode go in Settings after that.</p>
+<h3>How many plates can I save?</h3><p>You can keep every plate you use on file, and each one can have an optional nickname. You choose the right vehicle when you register a guest.</p>
+<h3>Will this work at every community?</h3><p>Permits are filed with your property's guest parking system, so it depends on your community. Ask your leasing office how guest parking works at your address, and email support@vritam.com if you have questions.</p>
+<h3>What happens to my data if I delete my account?</h3><p>Delete Account in Settings erases your saved vehicles, contact details, passcode and parking history from your device, and signs you out. You can read the <a href="/metro-parking/privacy.html">Privacy Policy</a> for more.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/sign-in-and-account-setup/parking-app-without-a-password/">Can I use a parking app without a password?</a></li><li><a href="/guides/sign-in-and-account-setup/delete-metro-parking-account/">How do I delete my account in a parking app?</a></li><li><a href="/guides/multiple-vehicles/nickname-guest-car-parking-app/">Can I nickname my guest&#x27;s car in a parking app?</a></li><li><a href="/guides/multiple-vehicles/guest-parking-for-cleaner-or-contractor/">How do I set up guest parking for my house cleaner or contractor?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
