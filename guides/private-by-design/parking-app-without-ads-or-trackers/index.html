@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>Is there a parking app without ads or trackers? - Metro Parking</title>
+<meta name="description" content="Yes. How to check any parking app for ads and trackers, and how Metro Parking handles it: no ad SDKs, no analytics SDKs, Sign in with Apple.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/parking-app-without-ads-or-trackers/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="Is there a parking app without ads or trackers? - Metro Parking">
+<meta property="og:description" content="Yes. How to check any parking app for ads and trackers, and how Metro Parking handles it: no ad SDKs, no analytics SDKs, Sign in with Apple.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/parking-app-without-ads-or-trackers/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/parking-app-without-ads-or-trackers/#article",
+   "headline": "Is there a parking app without ads or trackers?",
+   "description": "Yes. How to check any parking app for ads and trackers, and how Metro Parking handles it: no ad SDKs, no analytics SDKs, Sign in with Apple.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/parking-app-without-ads-or-trackers/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/parking-app-without-ads-or-trackers/",
+   "datePublished": "2026-11-27",
+   "dateModified": "2026-11-27",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does Sign in with Apple mean I have to make a password?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Sign in with Apple is the only way to sign in to Metro Parking, so there is no password to create and no email to verify."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where does Metro Parking keep my parking passcode?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In the iOS Keychain, the protected storage iOS uses for sensitive items. There is a longer explanation in the passcode storage guide."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I erase my data from the app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Delete Account in Settings erases your saved vehicles, contact details, passcode and parking history from your device and signs you out."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Metro Parking use analytics or advertising?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It has no ad SDKs, no analytics SDKs and no tracking across apps. The Privacy Policy has the full details."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I download Metro Parking today?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not yet. It is coming to the App Store and is made for iPhone."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Private by Design",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Is there a parking app without ads or trackers?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/private-by-design/">Private by Design</a></p>
+<h1>Is there a parking app without ads or trackers?</h1>
+<p class="seo-meta">Updated 2026-11-27</p>
+<p class="seo-answer">Yes, parking apps without ads or trackers exist, but you have to check rather than assume. Read the App Store privacy section to see what an app collects and whether any of it is used to track you, skim the privacy policy, and prefer apps that use Sign in with Apple instead of asking you to create a password. Fewer third-party add-ons usually means fewer places your data can go.</p>
+<h2>Why parking apps often carry ads and trackers</h2>
+<p>Many apps are built partly from code written by other companies. That code is called an SDK. An ad SDK shows ads. An analytics SDK reports what you tap and when. Some SDKs go further and link your activity across other apps on your phone.</p>
+<p>Parking apps are a common home for this. You open them often, at the same places, usually in a hurry. That pattern is valuable to advertisers and data brokers, which is why it is worth a minute of checking before you install.</p>
+<p>None of this is visible on the home screen. An app with no ads on screen can still ship with analytics code running quietly in the background.</p>
+<h2>How to check any parking app before you install it</h2>
+<ul><li><strong>Read the privacy section on the App Store page.</strong> It lists what the app collects and whether any of it is used to track you.</li><li><strong>Skim the privacy policy.</strong> Look for named advertising partners, analytics providers and phrases like "sharing with third parties".</li><li><strong>Look at the sign-in.</strong> Sign in with Apple means no new password for you to create, reuse or lose.</li><li><strong>Notice what it asks for on first launch.</strong> A guest parking app has a clear job. Requests that do not fit that job deserve a second look.</li><li><strong>Check how it earns money.</strong> A plain free tier plus a subscription is easier to understand than an app that is free with no visible way of paying for itself.</li></ul>
+<p>If an app fails two or three of these, you do not need to dig further. Pick a different one.</p>
+<h2>What a guest parking app really needs from you</h2>
+<p>To register a guest vehicle you need a license plate, your unit, a parking passcode from your property management or leasing office, and a way to reach you. That is the whole list. Ads and usage profiling are not part of the job.</p>
+<p>That is how Metro Parking is set up. You save your plates once, add your unit and passcode in Settings, and your email and phone fill in automatically. After that you choose a vehicle and a duration, and the permit is filed with your property's guest parking system.</p>
+<h2>How Metro Parking handles privacy</h2>
+<p>Metro Parking is built so the privacy questions above have short answers:</p>
+<ul><li><strong>No ad SDKs.</strong> There is no advertising code inside the app.</li><li><strong>No analytics SDKs.</strong> There is no analytics code inside the app.</li><li><strong>No tracking across apps.</strong> It does not follow you around your other apps.</li><li><strong>Sign in with Apple, no passwords.</strong> There is no password to create and no email to verify. It is the only way to sign in.</li><li><strong>Passcode in the iOS Keychain.</strong> Your parking passcode is kept in the same protected storage iOS uses for passwords. For more on that, see <a href="/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/">where a parking app keeps your passcode</a>.</li><li><strong>Delete Account in Settings.</strong> It erases your saved vehicles, contact details, passcode and parking history from your device and signs you out.</li></ul>
+<p>For the full details of what the app does and does not collect, read the <a href="/metro-parking/privacy.html">Privacy Policy</a>.</p>
+<h2>What to keep in mind</h2>
+<p>A few honest limits, so you know what you are getting:</p>
+<ul><li><strong>It is not on the App Store yet.</strong> Metro Parking is coming to the App Store, and it is for iPhone only.</li><li><strong>Permits still have to be filed.</strong> Registering a guest means the details needed for the permit go to your property's guest parking system. That is the point of the app, not tracking.</li><li><strong>You need a passcode from your property.</strong> Metro Parking does not issue passcodes. Your property management or leasing office does.</li><li><strong>Pro is billed through the App Store.</strong> The first 3 registrations are free. Pro is monthly or yearly and you manage it in your iOS subscription settings.</li><li><strong>Not affiliated with Apple.</strong> Metro Parking uses Sign in with Apple but is not affiliated with Apple Inc.</li></ul>
+<p>If you have a privacy question the policy does not answer, email support@vritam.com or visit the <a href="/metro-parking/support.html">Support page</a>. You can also start at the <a href="/metro-parking/">Metro Parking home page</a>.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Does Sign in with Apple mean I have to make a password?</h3><p>No. Sign in with Apple is the only way to sign in to Metro Parking, so there is no password to create and no email to verify.</p>
+<h3>Where does Metro Parking keep my parking passcode?</h3><p>In the iOS Keychain, the protected storage iOS uses for sensitive items. There is a longer explanation in the <a href="/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/">passcode storage guide</a>.</p>
+<h3>Can I erase my data from the app?</h3><p>Yes. Delete Account in Settings erases your saved vehicles, contact details, passcode and parking history from your device and signs you out.</p>
+<h3>Does Metro Parking use analytics or advertising?</h3><p>No. It has no ad SDKs, no analytics SDKs and no tracking across apps. The <a href="/metro-parking/privacy.html">Privacy Policy</a> has the full details.</p>
+<h3>Can I download Metro Parking today?</h3><p>Not yet. It is coming to the App Store and is made for iPhone.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/private-by-design/where-parking-passcode-is-stored/">Where does a parking app keep my passcode?</a></li><li><a href="/guides/sign-in-and-account-setup/set-up-guest-parking-after-moving-in/">How do I set up guest parking after moving in?</a></li><li><a href="/guides/sign-in-and-account-setup/cancel-guest-parking-app-subscription/">Can I cancel a guest parking app subscription anytime?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
