@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/metro-parking/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A84FF'/><g fill='white'><rect x='24' y='44' width='52' height='24' rx='9'/><rect x='32' y='32' width='36' height='18' rx='8'/><circle cx='36' cy='70' r='6'/><circle cx='64' cy='70' r='6'/></g></svg>">
+<style>
+  :root{
+    --blue:#0A84FF; --ink:#0B0B0C; --muted:#6E6E73; --line:#E5E5EA;
+    --bg:#FFFFFF; --bg-soft:#F5F5F7; --card:#FFFFFF; --radius:18px;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#F5F5F7; --muted:#98989D; --line:#2C2C2E; --bg:#000000; --bg-soft:#121214; --card:#1C1C1E; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--ui);background:var(--bg);color:var(--ink);line-height:1.65;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);
+         backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);
+         border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:1080px;
+       margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-size:17px}
+  .brand:hover{text-decoration:none}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--blue);display:grid;place-items:center;flex:none}
+  .nav-links{display:flex;gap:22px;font-size:15px} .nav-links a{color:var(--muted)}
+  main{padding:48px 0 20px}
+  h1{font-size:clamp(28px,5vw,40px);letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+  .lede{color:var(--muted);font-size:17px;margin:0 0 30px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 12px;letter-spacing:-.01em}
+  p,li{color:var(--muted);font-size:16px}
+  strong{color:var(--ink);font-weight:600}
+  .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+  .contact p{margin:0}
+  .faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:16px;color:var(--ink);
+          list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;flex:none;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:0;padding:0 20px 18px}
+  footer{padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;
+         margin-top:44px}
+  .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+</style>
+<title>What data does a guest parking app keep about me? - Metro Parking</title>
+<meta name="description" content="See what Metro Parking holds for you: saved vehicles, contact details, passcode and parking history, and how Delete Account clears them from your device.">
+<link rel="canonical" href="https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/what-data-guest-parking-app-keeps/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Metro Parking">
+<meta property="og:title" content="What data does a guest parking app keep about me? - Metro Parking">
+<meta property="og:description" content="See what Metro Parking holds for you: saved vehicles, contact details, passcode and parking history, and how Delete Account clears them from your device.">
+<meta property="og:url" content="https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/what-data-guest-parking-app-keeps/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/what-data-guest-parking-app-keeps/#article",
+   "headline": "What data does a guest parking app keep about me?",
+   "description": "See what Metro Parking holds for you: saved vehicles, contact details, passcode and parking history, and how Delete Account clears them from your device.",
+   "url": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/what-data-guest-parking-app-keeps/",
+   "mainEntityOfPage": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/what-data-guest-parking-app-keeps/",
+   "datePublished": "2026-11-28",
+   "dateModified": "2026-11-28",
+   "author": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Metro Parking",
+    "url": "https://nithinrgaddam.github.io/metro-parking/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does Metro Parking keep a password for me?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You sign in with Apple only, so there is no password to create and no email to verify."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Metro Parking track me across other apps?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It has no ad SDKs, no analytics SDKs and no tracking across apps."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does Delete Account erase?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It erases your saved vehicles, contact details, passcode and parking history from your device, and signs you out. You will find it in the app's Settings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I have to give the app my parking passcode?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, to file guest permits you enter the passcode in Settings. It comes from your property management or leasing office, since Metro Parking does not issue passcodes. It is stored in the iOS Keychain."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where can I read more about what is kept?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Privacy Policy is the place for anything beyond this page. Questions can go to support@vritam.com."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Metro Parking",
+     "item": "https://nithinrgaddam.github.io/metro-parking/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Private by Design",
+     "item": "https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "What data does a guest parking app keep about me?"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>.seo-crumbs{font-size:13px;opacity:.7;margin-bottom:12px}.seo-crumbs a{text-decoration:underline;text-underline-offset:3px}.seo-meta{font-size:12px;opacity:.6;letter-spacing:.06em;text-transform:uppercase}.seo-answer{font-size:1.12em}.seo-related li{margin-bottom:6px}.seo-cta{margin:32px 0;padding:22px;border:1px solid rgba(127,127,127,.25);border-radius:12px}</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg width="17" height="17" viewBox="0 0 100 100" aria-hidden="true"><g fill="white"><rect x="24" y="44" width="52" height="24" rx="9"/><rect x="32" y="32" width="36" height="18" rx="8"/><circle cx="36" cy="70" r="6"/><circle cx="64" cy="70" r="6"/></g></svg>
+      </span>
+      Metro Parking
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+
+<main><div class="wrap"><p class="seo-crumbs"><a href="/guides/">Guides</a> / <a href="/guides/private-by-design/">Private by Design</a></p>
+<h1>What data does a guest parking app keep about me?</h1>
+<p class="seo-meta">Updated 2026-11-28</p>
+<p class="seo-answer">A guest parking app usually keeps what it needs to file a permit: your contact details, the license plates you register, the address or unit you park at, and a record of past registrations. Some also store a property passcode. Anything beyond that, such as ad or analytics tracking, is the app maker's choice. Check the privacy policy, and look for a way to delete your data.</p>
+<h2>What a guest parking app has to know</h2>
+<p>To register a guest, an app needs to know who you are, which vehicle is visiting and where it will park. That is the minimum. Apps differ in what they keep after the permit is filed and for how long.</p>
+<ul><li>Your contact details, so permits and reminders reach you.</li><li>The license plates of the vehicles you register.</li><li>Your unit or address.</li><li>A passcode, if your property requires one for guest registration.</li><li>A record of past registrations.</li></ul>
+<p>Anything past that list is a choice the app maker made. Ad identifiers, usage analytics and sharing data with other companies are not needed to register a guest. Check for them before you install.</p>
+<h2>What Metro Parking holds for you</h2>
+<p>Metro Parking is an iPhone app for residents who register guest parking. It holds four things for you:</p>
+<ul><li><strong>Saved vehicles.</strong> The license plates you save once, each with an optional nickname, so you can pick the right vehicle when you register.</li><li><strong>Contact details.</strong> Your email and phone, which fill in automatically so you do not retype them for every guest.</li><li><strong>Passcode.</strong> The parking passcode from your property management or leasing office. Metro Parking does not issue passcodes. It keeps the one you enter in Settings.</li><li><strong>Parking history.</strong> The permits in your Usage tab, each marked active, upcoming or expired, plus the month-to-date hours shown for each vehicle.</li></ul>
+<p>You sign in with Apple, so there is no password to create and no email to verify. That is one less secret for the app to hold.</p>
+<h2>How it is protected, and what it leaves out</h2>
+<p>Your passcode is stored in the iOS Keychain, the part of iOS built for keeping secrets. For more on that, read <a href="/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/">Where does a parking app keep my passcode?</a></p>
+<p>Just as important is what the app does not include:</p>
+<ul><li>No passwords. Sign in with Apple is the only way in.</li><li>No ad SDKs.</li><li>No analytics SDKs.</li><li>No tracking across apps.</li></ul>
+<p>If that is the part you care about most, see <a href="/metro-parking/guides/private-by-design/parking-app-without-ads-or-trackers/">Is there a parking app without ads or trackers?</a></p>
+<h2>How to erase it</h2>
+<p>Delete Account is in the app's Settings. It erases your saved vehicles, contact details, passcode and parking history from your device, and signs you out.</p>
+<p>That covers what the app holds on your device. For anything further, including what happens beyond your device, read the <a href="/metro-parking/privacy.html">Privacy Policy</a>. You can also write to us through the <a href="/metro-parking/support.html">Support</a> page.</p>
+<p>Subscriptions are handled in the App Store, not in the app. To cancel Pro, open iOS Settings, tap your name, then Subscriptions, and select Metro Parking.</p>
+<h2>Questions worth asking any guest parking app</h2>
+<p>Before you hand over your plates and your passcode, run through a short checklist. It works for any app, not just this one.</p>
+<ul><li>Can I delete my data inside the app, or only by emailing someone?</li><li>Does it say in plain words what it keeps?</li><li>Does it use ad or analytics SDKs?</li><li>Does it ask me to create a password, or does it use Sign in with Apple?</li><li>Where does it store my property passcode?</li></ul>
+<p>An app that answers all five clearly is one you can judge for yourself. An app that dodges them is telling you something too.</p>
+<div class="seo-cta"><p><strong>Metro Parking</strong> registers guest parking at your community with one tap, shows every active permit and warns you before one expires. Coming to the App Store.</p><p><a href="/">Learn more</a></p></div>
+<h2>Frequently asked questions</h2>
+<h3>Does Metro Parking keep a password for me?</h3><p>No. You sign in with Apple only, so there is no password to create and no email to verify.</p>
+<h3>Does Metro Parking track me across other apps?</h3><p>No. It has no ad SDKs, no analytics SDKs and no tracking across apps.</p>
+<h3>What does Delete Account erase?</h3><p>It erases your saved vehicles, contact details, passcode and parking history from your device, and signs you out. You will find it in the app's Settings.</p>
+<h3>Do I have to give the app my parking passcode?</h3><p>Yes, to file guest permits you enter the passcode in Settings. It comes from your property management or leasing office, since Metro Parking does not issue passcodes. It is stored in the iOS Keychain.</p>
+<h3>Where can I read more about what is kept?</h3><p>The <a href="/metro-parking/privacy.html">Privacy Policy</a> is the place for anything beyond this page. Questions can go to support@vritam.com.</p>
+<h2>Related guides</h2><ul class="seo-related"><li><a href="/guides/private-by-design/where-parking-passcode-is-stored/">Where does a parking app keep my passcode?</a></li><li><a href="/guides/private-by-design/parking-app-without-ads-or-trackers/">Is there a parking app without ads or trackers?</a></li><li><a href="/guides/sign-in-and-account-setup/set-up-guest-parking-after-moving-in/">How do I set up guest parking after moving in?</a></li><li><a href="/guides/sign-in-and-account-setup/cancel-guest-parking-app-subscription/">Can I cancel a guest parking app subscription anytime?</a></li></ul></div></main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; <span id="y"></span> Metro Parking. Not affiliated with Apple Inc.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>

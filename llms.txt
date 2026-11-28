@@ -43,6 +43,7 @@
 
 - [Where does a parking app keep my passcode?](https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/where-parking-passcode-is-stored/): Your parking passcode should live in the iOS Keychain, not in plain app storage. See how Metro Parking keeps it, with no ad or analytics SDKs.
 - [Is there a parking app without ads or trackers?](https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/parking-app-without-ads-or-trackers/): Yes. How to check any parking app for ads and trackers, and how Metro Parking handles it: no ad SDKs, no analytics SDKs, Sign in with Apple.
+- [What data does a guest parking app keep about me?](https://nithinrgaddam.github.io/metro-parking/guides/private-by-design/what-data-guest-parking-app-keeps/): See what Metro Parking holds for you: saved vehicles, contact details, passcode and parking history, and how Delete Account clears them from your device.
 
 ### Sign In and Account Setup
 
